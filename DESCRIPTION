@@ -1,0 +1,19 @@
+Package: markdowntemplates
+Type: Package
+Title: Personal R Markdown Templates
+Version: 0.1.0.9000
+Date: 2016-01-20
+Author: Bob Rudis (@hrbrmstr)
+Maintainer: Bob Rudis <bob@rudis.net>
+Description: Personal R Markdown Templates
+URL: http://github.com/hrbrmstr/markdowntemplates
+BugReports: https://github.com/hrbrmstr/markdowntemplates/issues
+License: MIT + file LICENSE
+Suggests:
+    testthat
+Depends:
+    R (>= 3.0.0)
+Imports:
+    knitr,
+    rmarkdown
+RoxygenNote: 5.0.1

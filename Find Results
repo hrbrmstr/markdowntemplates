@@ -1,0 +1,129 @@
+Searching 34 files for "hrbrmrkdn" (regex)
+
+/Users/brudis/Development/markdowntemplates/DESCRIPTION:
+    1: Package: hrbrmrkdn
+    2  Type: Package
+    3  Title: Personal R Markdown Templates
+    .
+    7  Maintainer: Bob Rudis <bob@rudis.net>
+    8  Description: Personal R Markdown Templates
+    9: URL: http://github.com/hrbrmstr/hrbrmrkdn
+   10: BugReports: https://github.com/hrbrmstr/hrbrmrkdn/issues
+   11  License: MIT + file LICENSE
+   12  Suggests:
+
+/Users/brudis/Development/markdowntemplates/README.html:
+   63  
+   64  <p>A pacakge of R markdown templates.</p>
+   65: <p>Currently, there’s one <code>hrbrmrkdn::default</code> :-)</p>
+   66  <p>When you use RStudio to create a new R Markdown document, select “From Template” and choose “hrbrmstr’s Default Template”.</p>
+   67  <p>Alternately, you could just start a blank R markdown document and replace the YAML with:</p>
+   ..
+   70  author: &quot;Some Author&quot;
+   71  date: &quot;2016-01-21&quot;
+   72: output: hrbrmrkdn::default
+   73  ---</code></pre>
+   74: <p>There is currently only the <code>hrbrmrkdn::default</code> template that uses <a href="http://getskeleton.com">Skeleton</a> instead of Bootstrap, auto-places headers/footers and formats the author &amp; date metdata a bit differently. You can see a sample of it <a href="http://rpubs.com/hrbrmstr/dissolvingpolygons">on RPubs</a> and you can see how responsive it is <a href="http://rud.is/projects/dissolving_polygons.html">here</a> (the RPubs surrounding HTML makes the actual created HTML report non-responsive).</p>
+   75  
+   76  
+
+/Users/brudis/Development/markdowntemplates/README.md:
+    1  A pacakge of R markdown templates.
+    2  
+    3: Currently, there's one `hrbrmrkdn::default` :-)
+    4  
+    5  When you use RStudio to create a new R Markdown document, select "From Template" and
+    .
+   12      author: "Some Author"
+   13      date: "2016-01-21"
+   14:     output: hrbrmrkdn::default
+   15      ---
+   16      
+   17: There is currently only the `hrbrmrkdn::default` template that uses [Skeleton](http://getskeleton.com) instead of Bootstrap, auto-places headers/footers and formats the author & date metdata a bit differently. You can see a sample of it [on RPubs](http://rpubs.com/hrbrmstr/dissolvingpolygons) and you can see how responsive it is [here](http://rud.is/projects/dissolving_polygons.html) (the RPubs surrounding HTML makes the actual created HTML report non-responsive).
+   18  
+
+/Users/brudis/Development/markdowntemplates/README.Rmd:
+    8  A pacakge of R markdown templates.
+    9  
+   10: Currently, there's one `hrbrmrkdn::default` :-)
+   11  
+   12  When you use RStudio to create a new R Markdown document, select "From Template" and
+   ..
+   19      author: "Some Author"
+   20      date: "`r Sys.Date()`"
+   21:     output: hrbrmrkdn::default
+   22      ---
+   23      
+   24: There is currently only the `hrbrmrkdn::default` template that uses [Skeleton](http://getskeleton.com) instead of Bootstrap, auto-places headers/footers and formats the author & date metdata a bit differently. You can see a sample of it [on RPubs](http://rpubs.com/hrbrmstr/dissolvingpolygons) and you can see how responsive it is [here](http://rud.is/projects/dissolving_polygons.html) (the RPubs surrounding HTML makes the actual created HTML report non-responsive).
+
+/Users/brudis/Development/markdowntemplates/inst/rmarkdown/templates/bulma/skeleton/skeleton.Rmd:
+    3  author: "hrbrmstr"
+    4  date: "`r Sys.Date()`"
+    5: output: hrbrmrkdn::bulma
+    6  ---
+    7  Captain John Sheridan: You know, I just had a thought. You've been back and forth to your world so many times since you got here. How do I know you're the same Vorlon? Inside that encounter suit you could be anyone. Kosh Naranek: I have *always* been here. Captain John Sheridan: Oh, yeah? You said that about me too. Kosh Naranek: Yes. [starts to walk away] Captain John Sheridan: I really *hate* it when you do that. Kosh Naranek: [turns around] Good! Delenn: I am Grey. I stand between the candle and the star. We are Grey. We stand between the darkness and the light. Lt. Corwin: Do we trust no-one then? Cmdr. Susan Ivanova: No, trust Ivanova, trust yourself, anybody else, shoot'em. Ta'Lon: Congratulations citizen G'Kar. You are now a religious icon. Susan Ivanova: So the next time we find out where the Shadows plan to strike, we can mine the area, and as soon as they come out of hyperspace... Citizen G'Kar: Then, as you so concisely say, Boom!
+
+/Users/brudis/Development/markdowntemplates/inst/rmarkdown/templates/default/skeleton/skeleton.Rmd:
+    3  author: "hrbrmstr"
+    4  date: "`r Sys.Date()`"
+    5: output: hrbrmrkdn::skeleton
+    6  ---
+    7  Captain John Sheridan: You know, I just had a thought. You've been back and forth to your world so many times since you got here. How do I know you're the same Vorlon? Inside that encounter suit you could be anyone. Kosh Naranek: I have *always* been here. Captain John Sheridan: Oh, yeah? You said that about me too. Kosh Naranek: Yes. [starts to walk away] Captain John Sheridan: I really *hate* it when you do that. Kosh Naranek: [turns around] Good! Delenn: I am Grey. I stand between the candle and the star. We are Grey. We stand between the darkness and the light. Lt. Corwin: Do we trust no-one then? Cmdr. Susan Ivanova: No, trust Ivanova, trust yourself, anybody else, shoot'em. Ta'Lon: Congratulations citizen G'Kar. You are now a religious icon. Susan Ivanova: So the next time we find out where the Shadows plan to strike, we can mine the area, and as soon as they come out of hyperspace... Citizen G'Kar: Then, as you so concisely say, Boom!
+
+/Users/brudis/Development/markdowntemplates/man/hrbrmrkdn.Rd:
+    1  % Generated by roxygen2: do not edit by hand
+    2: % Please edit documentation in R/hrbrmrkdn-package.R
+    3  \docType{package}
+    4: \name{hrbrmrkdn}
+    5: \alias{hrbrmrkdn}
+    6: \alias{hrbrmrkdn-package}
+    7  \title{Personal R markdown templates}
+    8  \description{
+
+/Users/brudis/Development/markdowntemplates/R/bulma.r:
+   17  
+   18    css <- c(css, list.files(system.file("rmarkdown", "templates", "bulma", "resources",
+   19:                                        package = "hrbrmrkdn"),
+   20                             "*.css$", full.names=TRUE))
+   21  
+   22    header <- system.file("rmarkdown", "templates", "bulma", "header.html",
+   23:                         package = "hrbrmrkdn")
+   24  
+   25    args <- c("--standalone")
+   ..
+   30      args <- c(args, "--template",
+   31                rmarkdown::pandoc_path_arg(system.file("rmarkdown", "templates", "bulma", "base.html",
+   32:                                                      package = "hrbrmrkdn")))
+   33    else if (!is.null(template))
+   34      args <- c(args, "--template", rmarkdown::pandoc_path_arg(template))
+
+/Users/brudis/Development/markdowntemplates/R/default.r:
+   17  
+   18    css <- c(css, list.files(system.file("rmarkdown", "templates", "default", "resources",
+   19:                                        package = "hrbrmrkdn"),
+   20                             "*.css$", full.names=TRUE))
+   21  
+   22    header <- system.file("rmarkdown", "templates", "default", "header.html",
+   23:                         package = "hrbrmrkdn")
+   24  
+   25    args <- c("--standalone")
+   ..
+   30      args <- c(args, "--template",
+   31                rmarkdown::pandoc_path_arg(system.file("rmarkdown", "templates", "default", "base.html",
+   32:                                                      package = "hrbrmrkdn")))
+   33    else if (!is.null(template))
+   34      args <- c(args, "--template", rmarkdown::pandoc_path_arg(template))
+
+/Users/brudis/Development/markdowntemplates/R/hrbrmrkdn-package.R:
+    1  #' Personal R markdown templates
+    2  #'
+    3: #' @name hrbrmrkdn
+    4  #' @docType package
+    5  #' @author Bob Rudis (@@hrbrmstr)
+
+/Users/brudis/Development/markdowntemplates/tests/test-all.R:
+    1  library(testthat)
+    2: test_check("hrbrmrkdn")
+    3  
+
+26 matches across 11 files
