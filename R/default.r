@@ -1,4 +1,4 @@
-#' hrbrmstr's Skeleton R markdown format
+#' Skeleton CSS framework basic template
 #'
 #' Template for creating an R markdown document in Skeleton style
 #'
@@ -19,8 +19,6 @@ skeleton <- function(toc = FALSE, toc_depth = 3, number_sections = FALSE,
                                        package = "markdowntemplates"),
                            "*.css$", full.names=TRUE))
 
-  header <- system.file("rmarkdown", "templates", "default", "header.html",
-                        package = "markdowntemplates")
 
   args <- c("--standalone")
   args <- c(args, "--section-divs")
@@ -46,7 +44,7 @@ skeleton <- function(toc = FALSE, toc_depth = 3, number_sections = FALSE,
     args <- c(args, pandoc_html_highlight_args(highlight,
                                                template, self_contained, lib_dir,
                                                output_dir))
-    args <- c(args, includes_to_pandoc_args(includes = includes(before_body = header),
+    args <- c(args, includes_to_pandoc_args(includes = includes,
                                             filter = if (identical(runtime, "shiny"))
                                               normalize_path else identity))
     args

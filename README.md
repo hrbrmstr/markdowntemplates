@@ -1,17 +1,24 @@
 A pacakge of R markdown templates.
 
-Currently, there's one `markdowntemplates::default` :-)
+These are a set of alternate R markdown templates that do not use Bootstrap and do not include or rely on jQuery. These are primarily here for demonstration purposes but are also useful in an of themselves (it's always good to have choices). If you have a particular framework you like and it's not here, file an issue and I'll add it.
+
+`bulma` (`output: markdowntemplates::bulma`) uses the [Bulma CSS framework](http://bulma.io) and has optional `navtitle` and `navlink` YAML header elements which will be used in header of the generated file.
+
+`skeleton` (`output: markdowntemplates::skeleton`) or `default` (`output: markdowntemplates::default`) uses the [Skeleton CSS framework](http://getskeleton.com) and also has optional `navtitle` and `navlink` YAML header elements which will be used in header of the generated file.
+
+`minimal` (`output: markdowntemplates::minimal`) uses no CSS framework and only uses the `title` YAML header element.
 
 When you use RStudio to create a new R Markdown document, select "From Template" and
-choose "hrbrmstr's Default Template". 
+choose one of these templates.
 
-Alternately, you could just start a blank R markdown document and replace the YAML with:
+### Bulma example
 
-    ---
-    title: "Analysis Title"
-    author: "Some Author"
-    date: "2016-01-21"
-    output: markdowntemplates::default
-    ---
-    
-There is currently only the `markdowntemplates::default` template that uses [Skeleton](http://getskeleton.com) instead of Bootstrap, auto-places headers/footers and formats the author & date metdata a bit differently. You can see a sample of it [on RPubs](http://rpubs.com/hrbrmstr/dissolvingpolygons) and you can see how responsive it is [here](http://rud.is/projects/dissolving_polygons.html) (the RPubs surrounding HTML makes the actual created HTML report non-responsive).
+![](bulma.png)
+
+### Skeleton/default example
+
+![](skeleton.png)
+
+### Minimal example
+
+![](minimal.png)

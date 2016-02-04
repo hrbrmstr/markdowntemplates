@@ -42,7 +42,7 @@ h4 {
   font-size: 24px;
 }
 
-.hrbrhdr {
+.hdr {
   position:fixed;
   width:100%;
   background:#06062c;
@@ -57,34 +57,34 @@ h4 {
   text-align:right;
 }
 
-.hrbrhdr > a:link,
-.hrbrhdr > a:visited,
-.hrbrhdr > a:hover,
-.hrbrhdr > a:active {
+.hdr > a:link,
+.hdr > a:visited,
+.hdr > a:hover,
+.hdr > a:active {
   color:white;
   text-decoration: none;
 }
 
-.hrbrhdr > a:hover {
+.hdr > a:hover {
   color:#94bd5a;
 }
 
-.hrbrftr {
+.ftr {
   border-top:1px solid #69707a;
   margin-top:30px;
   text-align:center;
   font-size:10px;
 }
 
-.hrbrftr > a:link,
-.hrbrftr > a:visited,
-.hrbrftr > a:hover,
-.hrbrftr > a:active {
+.ftr > a:link,
+.ftr > a:visited,
+.ftr > a:hover,
+.ftr > a:active {
   color:#69707a;
   text-decoration: none;
 }
 
-.hrbrftr > a:hover {
+.ftr > a:hover {
   color:#69707a;
 }
 

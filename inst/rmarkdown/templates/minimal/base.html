@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- mstr -->
 <html xmlns="http://www.w3.org/1999/xhtml"$if(lang)$ lang="$lang$" xml:lang="$lang$"$endif$>
 
 <head>
@@ -9,15 +8,7 @@
 <meta name="generator" content="pandoc" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-$for(author-meta)$
-<meta name="author" content="$author-meta$" />
-$endfor$
-
-$if(date-meta)$
-<meta name="date" content="$date-meta$" />
-$endif$
-
-<title>$if(title-prefix)$$title-prefix$ - $endif$$pagetitle$</title>
+<title>$if(title)$$title$$endif$</title>
 
 $for(header-includes)$
 $header-includes$
@@ -52,46 +43,13 @@ $endfor$
 </head>
 
 <body>
-  <section class="section">
-    <div class="container">
+<div class="container">
 
-<header class="header" style="margin-bottom:40px">
-  <div class="container">
-    <!-- Left side -->
-    <div class="header-left">
-      <a class="header-item" href="#">
-        <b>&nbsp;&nbsp;&nbsp;$if(highlighting-css)$$navtitle$$endif$</b>
-      </a>
-    </div>
-
-  </div>
-</header>
+<h1>$if(title)$$title$$endif$</h1>
 
 $for(include-before)$
 $include-before$
 $endfor$
-
-$if(title)$
-<div id="$idprefix$header">
-<h1 class="title">$title$</h1>
-$if(subtitle)$
-<h3 class="subtitle"><em>$subtitle$</em></h3>
-$endif$
-
-<div class="authordate">
-$for(author)$
-$if(author.name)$
-<span class="author"><em>$author.name$</em></span>
-$else$
-<span class="author"><em>$author$</em></span>
-$endif$
-$endfor$
-$if(date)$
-• <span class="date"><em>$date$</em></span>
-$endif$
-</div>
-$endif$
-</div>
 
 $if(toc)$
 <div id="$idprefix$TOC">
@@ -105,13 +63,7 @@ $for(include-after)$
 $include-after$
 $endfor$
 
-<div class="ftr">
-  <a target="_blank" href="#">link</a> •
-  <a target="_blank" href="#">link</a>
 </div>
-
-</div>
-  </section>
 
 $if(mathjax-url)$
 <!-- dynamically load mathjax for compatibility with self-contained -->
@@ -124,5 +76,6 @@ $if(mathjax-url)$
   })();
 </script>
 $endif$
+
 </body>
 </html>

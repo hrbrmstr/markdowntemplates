@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- hrbrmstr -->
 <html xmlns="http://www.w3.org/1999/xhtml"$if(lang)$ lang="$lang$" xml:lang="$lang$"$endif$>
 
 <head>
@@ -53,7 +52,7 @@ $endfor$
 
 <body>
 
-<div class="hrbrhdr u-max-full-width"><a href="http://rud.is/b">rud.is</a></div>
+<div class="hdr u-max-full-width"><a href="$if(navlink)$$navlink$$endif$">$if(navtitle)$$navtitle$$endif$</a></div>
 
 <div class="container" style="margin-top:48pt">
   <div class="row">
@@ -97,14 +96,9 @@ $for(include-after)$
 $include-after$
 $endfor$
 
-<div class="hrbrftr">
-  <a target="_blank" href="mailto:bob@rudis.net">bob@rudis.net</a> •
-  <a target="_blank" href="https://twitter.com/hrbrmstr">@hrbrmstr</a> •
-  <a target="_blank" href="http://rud.is/">rud.is</a> •
-  <a target="_blank" href="http://dds.ec/">#ddsec</a> •
-  <a target="_blank" href="http://github.com/hrbrmstr">GitHub</a> •
-  <a target="_blank" href="https://www.linkedin.com/in/hrbrmstr">LinkedIn</a> •
-  <a target="_blank" href="https://http://stackoverflow.com/users/1457051/hrbrmstr">SO</a>
+<div class="ftr">
+  <a target="_blank" href="#">link</a> •
+  <a target="_blank" href="#">link</a>
 </div>
 
 </div>
@@ -120,8 +114,9 @@ $if(mathjax-url)$
   })();
 </script>
 $endif$
-</div>
-</div>
+
+    </div>
+  </div>
 </div>
 
 

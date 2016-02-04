@@ -1,23 +1,22 @@
-#' Bulma CSS framework basic template
+#' Minimal template
 #'
-#' Template for creating an R markdown document using the Bulma CSS framework style
-#'
-#' Based on the \href{https://github.com/jgthms/bulma/}{Bulma CSS framework}.
+#' Template for creating an R markdown document with minimal markup
 #'
 #' @inheritParams rmarkdown::html_document
 #'
 #' @export
-bulma <- function(toc = FALSE, toc_depth = 3, number_sections = FALSE,
-                    fig_width = 7, fig_height = 5, fig_retina = if (!fig_caption) 2,
-                    fig_caption = FALSE, dev = "png", smart = TRUE, self_contained = TRUE,
-                    theme = NULL, highlight = "tango", mathjax = "default",
-                    template = "default", css = NULL, includes = NULL, keep_md = TRUE,
-                    lib_dir = NULL, md_extensions = NULL, pandoc_args = NULL,
-                    ...) {
+minimal <- function(toc = FALSE, toc_depth = 3, number_sections = FALSE,
+                     fig_width = 7, fig_height = 5, fig_retina = if (!fig_caption) 2,
+                     fig_caption = FALSE, dev = "png", smart = TRUE, self_contained = TRUE,
+                     theme = NULL, highlight = "tango", mathjax = "default",
+                     template = "default", css = NULL, includes = NULL, keep_md = TRUE,
+                     lib_dir = NULL, md_extensions = NULL, pandoc_args = NULL,
+                     ...) {
 
-  css <- c(css, list.files(system.file("rmarkdown", "templates", "bulma", "resources",
+  css <- c(css, list.files(system.file("rmarkdown", "templates", "minimal", "resources",
                                        package = "markdowntemplates"),
                            "*.css$", full.names=TRUE))
+
 
   args <- c("--standalone")
   args <- c(args, "--section-divs")
@@ -25,7 +24,7 @@ bulma <- function(toc = FALSE, toc_depth = 3, number_sections = FALSE,
 
   if (identical(template, "default"))
     args <- c(args, "--template",
-              rmarkdown::pandoc_path_arg(system.file("rmarkdown", "templates", "bulma", "base.html",
+              rmarkdown::pandoc_path_arg(system.file("rmarkdown", "templates", "minimal", "base.html",
                                                      package = "markdowntemplates")))
   else if (!is.null(template))
     args <- c(args, "--template", rmarkdown::pandoc_path_arg(template))
@@ -66,4 +65,10 @@ bulma <- function(toc = FALSE, toc_depth = 3, number_sections = FALSE,
                                                             template = template,
                                                             pandoc_args = pandoc_args,
                                                             ...))
+}
+
+#' @rdname skeleton
+#' @export
+default <- function(...) {
+  skeleton(...)
 }
