@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"$if(lang)$ lang="$lang$" xml:lang="$lang$"$endif$>
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>$if(title)$$title$$endif$</title>
+
+$for(header-includes)$
+$header-includes$
+$endfor$
+
+$if(highlightjs)$
+<style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet"
+      href="$highlightjs$/$if(highlightjs-theme)$$highlightjs-theme$$else$default$endif$.css"
+      $if(html5)$$else$type="text/css" $endif$/>
+<script src="$highlightjs$/highlight.js"></script>
+<script type="text/javascript">
+if (window.hljs && document.readyState && document.readyState === "complete") {
+   window.setTimeout(function() {
+      hljs.initHighlighting();
+   }, 0);
+}
+</script>
+$endif$
+
+$if(highlighting-css)$
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+$highlighting-css$
+</style>
+$endif$
+
+$for(css)$
+<link rel="stylesheet" href="$css$" $if(html5)$$else$type="text/css" $endif$/>
+$endfor$
+
+</head>
+
+<body>
+<div class="wrapper">
+  <div class="units-row">
+    <div class="unit-centered unit-80">
+      <h1>$if(title)$$title$$endif$</h1>
+
+      $for(include-before)$
+      $include-before$
+      $endfor$
+
+      $if(toc)$
+      <div id="$idprefix$TOC">
+        $toc$
+      </div>
+      $endif$
+
+      $body$
+
+      $for(include-after)$
+      $include-after$
+      $endfor$
+
+    </div>
+  </div>
+</div>
+$if(mathjax-url)$
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "$mathjax-url$";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+$endif$
+
+</body>
+</html>
