@@ -1,8 +1,7 @@
 ---
 title: "INSERT_TITLE_HERE"
 author: "AUTHOR"
-navtitle: "NAVTITLE"
-navlink: "http://NAVLINK/"
+navlink: "[NAVTITLE](http://NAVLINK/)"
 date: "`r Sys.Date()`"
 output: markdowntemplates::skeleton
 ---

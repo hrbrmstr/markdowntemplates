@@ -1,15 +1,14 @@
 ---
 title: "INSERT_TITLE_HERE"
 author: "AUTHOR"
-navtitle: "NAVTITLE"
-navlink: "http://NAVLINK/"
+navlink: "[NAVTITLE](http://NAVLINK/)"
 og:
   type: "article"
   title: "opengraph title"
   url: "optional opengraph url"
   image: "optional opengraph image link"
 footer:
-  - content: '<a href="link">text</a> • <a href="link2">text2</a><br/>'
+  - content: '[link1](http://example.com/) • [link2](http://example.com/)<br/>'
   - content: 'Copyright blah blah'
 date: "`r Sys.Date()`"
 output: markdowntemplates::bulma

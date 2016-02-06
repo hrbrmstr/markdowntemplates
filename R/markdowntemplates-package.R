@@ -8,14 +8,13 @@
 #'
 #' \itemize{
 #' \item \code{bulma} (\code{output: markdowntemplates::bulma}) uses the Bulma CSS
-#' framework and has optional \code{navtitle} and \code{navlink} YAML
-#' header elements as well as support for limited OpenGraph header elements
+#' framework and has optional \code{navlink} YAML
+#' header element as well as support for limited OpenGraph header elements
 #' (see the example Rmd) which will be used in header of the generated file.
 #'
 #' \item \code{skeleton} (\code{output: markdowntemplates::skeleton}) or
 #' \code{default} (\code{output:markdowntemplates::default}) uses the Skeleton CSS
-#' framework and also has optional \code{navtitle} and
-#' \code{navlink} YAML header elements which will be used in header of the generated
+#' framework and also has optional \code{navlink} YAML header elements which will be used in header of the generated
 #' file.
 #'
 #' \item \code{kube} (\code{output: markdowntemplates::kube}) uses the Kube CSS framework
