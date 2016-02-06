@@ -1,23 +1,15 @@
-language: c
+language: r
+warnings_are_errors: true
+sudo: required
 
-before_install:
-  - curl -OL http://raw.github.com/craigcitro/r-travis/master/scripts/travis-tool.sh
-  - chmod 755 ./travis-tool.sh
-  - ./travis-tool.sh bootstrap
+apt_packages:
+ - binutils
 
-install:
-  - ./travis-tool.sh install_github plyr
-  - ./travis-tool.sh install_deps
+env:
+ global:
+   - CRAN: http://cran.rstudio.com
 
-script: ./travis-tool.sh run_tests
-
-on_failure:
-  - ./travis-tool.sh dump_logs
-
-branches:
-  except:
-  - /-expt$/
-  notifications:
-    email:
-      on_success: change
-      on_failure: change
+notifications:
+  email:
+    on_success: change
+    on_failure: change
