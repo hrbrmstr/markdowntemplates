@@ -1,11 +1,12 @@
 Package: markdowntemplates
 Type: Package
-Title: Personal R Markdown Templates
-Version: 0.1.0.9000
-Date: 2016-01-20
+Title: Alternate R Markdown Templates
+Version: 0.2.0.9000
+Date: 2016-02-06
 Author: Bob Rudis (@hrbrmstr)
 Maintainer: Bob Rudis <bob@rudis.net>
-Description: Personal R Markdown Templates
+Description: A set of alternate R markdown templates that do not
+    use Bootstrap and do not include or rely on jQuery.
 URL: http://github.com/hrbrmstr/markdowntemplates
 BugReports: https://github.com/hrbrmstr/markdowntemplates/issues
 License: MIT + file LICENSE
@@ -15,5 +16,6 @@ Depends:
     R (>= 3.0.0)
 Imports:
     knitr,
-    rmarkdown
+    rmarkdown,
+    htmltools
 RoxygenNote: 5.0.1

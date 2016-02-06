@@ -1,0 +1,7 @@
+0.2.0.9000
+* `self_contained=FALSE` now copies the custom CSS
+* Bulma `base.html` template fixed (navtitle/navlink weren't working)
+* removed errant, duplicate `skeleton()` function
+
+0.1.0.9000
+* Initial release

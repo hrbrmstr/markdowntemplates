@@ -2,6 +2,7 @@
 title: "INSERT_TITLE_HERE"
 author: "AUTHOR"
 navtitle: "NAVTITLE"
+navlink: "http://NAVLINK/"
 date: "`r Sys.Date()`"
 output: markdowntemplates::bulma
 ---

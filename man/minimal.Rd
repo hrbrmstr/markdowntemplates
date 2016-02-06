@@ -4,18 +4,14 @@
 \alias{minimal}
 \title{Minimal template}
 \usage{
-minimal(toc = FALSE, toc_depth = 3, number_sections = FALSE,
-  fig_width = 7, fig_height = 5, fig_retina = if (!fig_caption) 2,
-  fig_caption = FALSE, dev = "png", smart = TRUE, self_contained = TRUE,
-  theme = NULL, highlight = "tango", mathjax = "default",
-  template = "default", css = NULL, includes = NULL, keep_md = TRUE,
-  lib_dir = NULL, md_extensions = NULL, pandoc_args = NULL, ...)
+minimal(number_sections = FALSE, fig_width = 7, fig_height = 5,
+  fig_retina = if (!fig_caption) 2, fig_caption = FALSE, dev = "png",
+  smart = TRUE, self_contained = TRUE, highlight = "default",
+  mathjax = "default", extra_dependencies = NULL, css = NULL,
+  includes = NULL, keep_md = FALSE, lib_dir = NULL,
+  md_extensions = NULL, pandoc_args = NULL, ...)
 }
 \arguments{
-\item{toc}{\code{TRUE} to include a table of contents in the output}
-
-\item{toc_depth}{Depth of headers to include in table of contents}
-
 \item{number_sections}{\code{TRUE} to number section headings}
 
 \item{fig_width}{Default width (in inches) for figures}
@@ -43,11 +39,6 @@ scripts, stylesheets, images, and videos. Note that even for self contained
 documents MathJax is still loaded externally (this is necessary because of
 it's size).}
 
-\item{theme}{Visual theme ("default", "cerulean", "journal", "flatly",
-"readable", "spacelab", "united", "cosmo", "lumen", "paper", "sandstone",
-"simplex", or "yeti"). Pass \code{NULL} for no theme (in this case you can
-use the \code{css} parameter to add your own styles).}
-
 \item{highlight}{Syntax highlighting style. Supported styles include
 "default", "tango", "pygments", "kate", "monochrome", "espresso",
 "zenburn", "haddock", and "textmate". Pass \code{NULL} to prevent syntax
@@ -57,13 +48,6 @@ highlighting.}
 the official MathJax CDN. The "local" option uses a local version of
 MathJax (which is copied into the output directory). You can pass an
 alternate URL or pass \code{NULL} to exclude MathJax entirely.}
-
-\item{template}{Pandoc template to use for rendering. Pass "default" to use
-the rmarkdown package default template; pass \code{NULL} to use pandoc's
-built-in template; pass a path to use a custom template that you've
-created. Note that if you don't use the "default" template then some
-features of \code{html_document} won't be available (see the Templates
-section below for more details).}
 
 \item{css}{One or more css files to include}
 
@@ -81,6 +65,9 @@ default definition or R Markdown. See the \code{\link{rmarkdown_format}}
 for additional details.}
 
 \item{pandoc_args}{Additional command line options to pass to pandoc}
+
+\item{...}{Additional function arguments to pass to the base R Markdown HTML
+output formatter}
 }
 \description{
 Template for creating an R markdown document with minimal markup
