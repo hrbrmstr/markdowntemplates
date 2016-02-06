@@ -1,3 +1,4 @@
+# Most (if not all) from github.com/rstudio/rmarkdown
 
 from_rmarkdown <- function (implicit_figures = TRUE, extensions = NULL) {
   extensions <- paste0(extensions, collapse = "")
