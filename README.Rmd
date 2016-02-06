@@ -25,16 +25,16 @@ When you use RStudio to create a new R Markdown document, select "From Template"
 
 ### Bulma example
 
-![](man/figures/bulma.png)
+![](./man/figures/bulma.png)
 
 ### Skeleton/default example
 
-![](man/figures/skeleton.png)
+![](./man/figures/skeleton.png)
 
 ### Kube example
 
-![](man/figures/kube.png)
+![](./man/figures/kube.png)
 
 ### Minimal example
 
-![](man/figures/minimal.png)
+![](./man/figures/minimal.png)

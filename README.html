@@ -67,7 +67,7 @@ img {
 <p>A package of R markdown templates.</p>
 <p>These are a set of alternate R markdown templates that do not use Bootstrap and do not include or rely on jQuery. These are primarily here for demonstration purposes but are also useful in and of themselves (it’s always good to have choices). If you have a particular framework you like and it’s not here, file an issue and I’ll add it.</p>
 <ul>
-<li><strong>bulma</strong> (<code>output: markdowntemplates::bulma</code>) uses the <a href="http://bulma.io">Bulma CSS framework</a> and has optional <code>navtitle</code> and <code>navlink</code> YAML header elements which will be used in header of the generated file.</li>
+<li><strong>bulma</strong> (<code>output: markdowntemplates::bulma</code>) uses the <a href="http://bulma.io">Bulma CSS framework</a> and has optional <code>navtitle</code> and <code>navlink</code> YAML header elements and also has support for a subset of OpenGraph tags (see the example Rmd) which will be used in header of the generated file.</li>
 <li><strong>skeleton</strong> (<code>output: markdowntemplates::skeleton</code>) or <strong>default</strong> (<code>output: markdowntemplates::default</code>) uses the <a href="http://getskeleton.com">Skeleton CSS framework</a> and also has optional <code>navtitle</code> and <code>navlink</code> YAML header elements which will be used in header of the generated file.</li>
 <li><strong>kube</strong> (<code>output: markdowntemplates::kube</code>) uses the <a href="https://imperavi.com/kube/">Kube CSS framework</a> (contributed by Kieran Healy)</li>
 <li><strong>minimal</strong> (<code>output: markdowntemplates::minimal</code>) uses no CSS framework and only uses the <code>title</code> YAML header element.</li>
@@ -76,7 +76,7 @@ img {
 <div id="releases" class="section level3">
 <h3>Releases</h3>
 <ul>
-<li>0.3.0.9000 Kube framework contributed by Kieran Healy</li>
+<li>0.3.0.9000 Kube framework contributed by Kieran Healy; preview images in help pages</li>
 <li>0.2.1.9000 arbitrary footer content can be specified in the YAML header</li>
 <li>0.2.0.9000 <code>self_contained=FALSE</code> now copies the custom CSS</li>
 <li>0.1.0.9000 Initial release</li>
