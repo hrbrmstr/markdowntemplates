@@ -1,0 +1,8 @@
+---
+title: "INSERT_TITLE_HERE"
+output:
+  markdowntemplates::minimal:
+    self_contained: true
+    create_dir: false
+---
+Test Rmd

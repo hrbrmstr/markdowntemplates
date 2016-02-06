@@ -1,7 +1,7 @@
 Package: markdowntemplates
 Type: Package
 Title: Alternate R Markdown Templates
-Version: 0.3.1.9000
+Version: 0.3.2.9000
 Date: 2016-02-06
 Author: Bob Rudis (@hrbrmstr), Kieran Healy <kjhealy@gmail.com>
 Maintainer: Bob Rudis <bob@rudis.net>
@@ -11,7 +11,9 @@ URL: http://github.com/hrbrmstr/markdowntemplates
 BugReports: https://github.com/hrbrmstr/markdowntemplates/issues
 License: MIT + file LICENSE
 Suggests:
-    testthat
+    testthat,
+    xml2,
+    rvest
 Depends:
     R (>= 3.0.0)
 Imports:
