@@ -6,17 +6,21 @@
 #' good to have choices). If you have a particular framework you like and it's
 #' not here, file an issue and I'll add it.
 #'
-#' `bulma` (`output: markdowntemplates::bulma`) uses the [Bulma CSS
-#' framework](http://bulma.io) and has optional `navtitle` and `navlink` YAML
-#' header elements which will be used in header of the generated file.
+#' \code{bulma} (\code{output: markdowntemplates::bulma}) uses the Bulma CSS
+#' framework and has optional \code{navtitle} and \code{navlink} YAML
+#' header elements as well as support for limited OpenGraph header elements
+#' (see the example Rmd) which will be used in header of the generated file.
 #'
-#' `skeleton` (`output: markdowntemplates::skeleton`) or `default` (`output:
-#' markdowntemplates::default`) uses the [Skeleton CSS
-#' framework](http://getskeleton.com) and also has optional `navtitle` and
-#' `navlink` YAML header elements which will be used in header of the generated
+#' \code{skeleton} (\code{output: markdowntemplates::skeleton}) or
+#' \code{default} (\code{output:markdowntemplates::default}) uses the Skeleton CSS
+#' framework and also has optional \code{navtitle} and
+#' \code{navlink} YAML header elements which will be used in header of the generated
 #' file.
 #'
-#' `minimal` (`output: markdowntemplates::minimal`) uses no CSS framework and
+#' \code{kube} (\code{output: markdowntemplates::kube}) uses the Kube CSS framework
+#'  (contributed by Kieran Healy)
+#'
+#' \code{minimal} (\code{output: markdowntemplates::minimal}) uses no CSS framework and
 #' only uses the `title` YAML header element.
 #'
 #' When you use RStudio to create a new R Markdown document, select "From

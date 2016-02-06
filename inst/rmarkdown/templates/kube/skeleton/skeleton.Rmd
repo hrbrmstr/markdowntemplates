@@ -1,6 +1,8 @@
 ---
 title: "INSERT_TITLE_HERE"
-output: markdowntemplates::skeleton
+author: "AUTHOR"
+date: "`r Sys.Date()`"
+output: markdowntemplates::kube
 ---
 Captain John Sheridan: You know, I just had a thought. You've been back and forth to your world so many times since you got here. How do I know you're the same Vorlon? Inside that encounter suit you could be anyone. Kosh Naranek: I have *always* been here. Captain John Sheridan: Oh, yeah? You said that about me too. Kosh Naranek: Yes. [starts to walk away] Captain John Sheridan: I really *hate* it when you do that. Kosh Naranek: [turns around] Good! Delenn: I am Grey. I stand between the candle and the star. We are Grey. We stand between the darkness and the light. 
 

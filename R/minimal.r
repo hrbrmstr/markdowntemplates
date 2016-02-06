@@ -2,6 +2,15 @@
 #'
 #' Template for creating an R markdown document with minimal markup
 #'
+#' \if{html}{
+#' \figure{minimal.png}{options: width="100\%" alt="Figure: minimal example"}
+#' }
+#'
+#' \if{latex}{
+#' \figure{minimal.png}{options: width="100\%" alt="Figure: minimal example"}
+#' }
+#'
+
 #' @inheritParams rmarkdown::html_document
 #'
 #' @export

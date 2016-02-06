@@ -4,6 +4,14 @@
 #'
 #' Based on the \href{https://github.com/jgthms/bulma/}{Bulma CSS framework}.
 #'
+#' \if{html}{
+#' \figure{bulma.png}{options: width="100\%" alt="Figure: bulma example"}
+#' }
+#'
+#' \if{latex}{
+#' \figure{bulma.png}{options: width="100\%" alt="Figure: bulma example"}
+#' }
+#'
 #' @inheritParams rmarkdown::html_document
 #'
 #' @export

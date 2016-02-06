@@ -72,4 +72,13 @@ output formatter}
 \description{
 Template for creating an R markdown document with minimal markup
 }
+\details{
+\if{html}{
+\figure{minimal.png}{options: width="100\%" alt="Figure: minimal example"}
+}
+
+\if{latex}{
+\figure{minimal.png}{options: width="100\%" alt="Figure: minimal example"}
+}
+}
 

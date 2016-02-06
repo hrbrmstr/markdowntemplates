@@ -4,6 +4,14 @@
 #'
 #' Based on the \href{http://getskeleton.com/}{Skeleton CSS framework}.
 #'
+#' \if{html}{
+#' \figure{skeleton.png}{options: width="100\%" alt="Figure: skeleton example"}
+#' }
+#'
+#' \if{latex}{
+#' \figure{skeleton.png}{options: width="100\%" alt="Figure: skeleton example"}
+#' }
+#'
 #' @inheritParams rmarkdown::html_document
 #'
 #' @export
