@@ -1,3 +1,7 @@
+0.3.1.9000
+* CRAN checks
+* minor man pg tweaks
+
 0.3.0.9000
 * Kube CSS framework contributed by Kieran Healy
 * Added template preview images to template function help pages
