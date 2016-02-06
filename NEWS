@@ -1,3 +1,7 @@
+0.3.3.9000
+* Skeleton template now matches Bulma in terms of YAML frontmatter support
+* added YAML frontmatter documentation in template functions
+
 0.3.2.9000
 * basic template tests
 * rmarkdown::render examples added to template functions

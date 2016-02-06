@@ -10,6 +10,13 @@
 #' \figure{minimal.png}{options: width="100\%" alt="Figure: minimal example"}
 #' }
 #'
+#' @section  YAML Frontmatter:
+#' The following example shows all possible YAML frontmatter options:
+#' \preformatted{---
+#' title: "INSERT_TITLE_HERE"
+#' output: markdowntemplates::minimal
+#' ---}
+#'
 #' @inheritParams rmarkdown::html_document
 #' @param extra_dependencies,... Additional function arguments to pass to the
 #'        base R Markdown HTML output formatter

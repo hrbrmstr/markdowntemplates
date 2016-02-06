@@ -7,6 +7,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
+$if(title)$<meta property="og:title" content="$title$" />$endif$
+$if(og)$
+<meta property="og:type" content="$if(og.type)$$og.type$$else$article$endif$" />
+$if(og.url)$<meta property="og:url" content="$og.url$" />$endif$
+$if(og.image)$<meta property="og:image" content="$og.image$" />$endif$
+$else$
+<meta property="og:type" content="article" />
+$endif$
 
 $for(author-meta)$
 <meta name="author" content="$author-meta$" />
@@ -97,8 +105,11 @@ $include-after$
 $endfor$
 
 <div class="ftr">
-  <a target="_blank" href="#">link</a> •
-  <a target="_blank" href="#">link</a>
+$for(footer)$
+$if(footer.content)$
+$footer.content$
+$endif$
+$endfor$
 </div>
 
 </div>

@@ -81,6 +81,14 @@ Template for creating an R markdown document with minimal markup
 \figure{minimal.png}{options: width="100\%" alt="Figure: minimal example"}
 }
 }
+\section{YAML Frontmatter}{
+
+The following example shows all possible YAML frontmatter options:
+\preformatted{---
+title: "INSERT_TITLE_HERE"
+output: markdowntemplates::minimal
+---}
+}
 \examples{
 \dontrun{
 rmarkdown::render("source.Rmd", clean=TRUE, quiet=TRUE, output_file="output.html")

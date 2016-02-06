@@ -78,6 +78,16 @@ Based on the \href{http://k1.imperavi.com/}{Kube 4.3 CSS framework}.
 \if{html}{
 \figure{kube.png}{options: width="100\%" alt="Figure: kube example"}
 }
+}
+\section{YAML Frontmatter}{
+
+The following example shows all possible YAML frontmatter options:
+\preformatted{---
+title: "INSERT_TITLE_HERE"
+author: "AUTHOR"
+date: "`r Sys.Date()`"
+output: markdowntemplates::kube
+---}
 
 \if{latex}{
 \figure{kube.png}{options: width="100\%" alt="Figure: kube example"}

@@ -12,6 +12,24 @@
 #' \figure{skeleton.png}{options: width="100\%" alt="Figure: skeleton example"}
 #' }
 #'
+#' @section  YAML Frontmatter:
+#' The following example shows all possible YAML frontmatter options:
+#' \preformatted{---
+#' title: "INSERT_TITLE_HERE"
+#' author: "AUTHOR"
+#' navlink: "[NAVTITLE](http://NAVLINK/)"
+#' og:
+#'   type: "article"
+#'   title: "opengraph title"
+#'   url: "optional opengraph url"
+#'   image: "optional opengraph image link"
+#' footer:
+#'   - content: '[link1](http://example.com/) • [link2](http://example.com/)<br/>'
+#'   - content: 'Copyright blah blah'
+#' date: "`r Sys.Date()`"
+#' output: markdowntemplates::skeleton
+#' ---}
+#'
 #' @inheritParams rmarkdown::html_document
 #' @param extra_dependencies,... Additional function arguments to pass to the
 #'        base R Markdown HTML output formatter
