@@ -11,7 +11,7 @@
 #' \if{latex}{
 #' \figure{bulma.png}{options: width="100\%" alt="Figure: bulma example"}
 #' }
-#'
+#' @encoding UTF-8
 #' @section  YAML Frontmatter:
 #' The following example shows all possible YAML frontmatter options:
 #' \preformatted{---

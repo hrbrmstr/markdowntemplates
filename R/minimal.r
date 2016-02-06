@@ -9,7 +9,7 @@
 #' \if{latex}{
 #' \figure{minimal.png}{options: width="100\%" alt="Figure: minimal example"}
 #' }
-#'
+#' @encoding UTF-8
 #' @section  YAML Frontmatter:
 #' The following example shows all possible YAML frontmatter options:
 #' \preformatted{---
