@@ -5,7 +5,7 @@ output:
   md_document:
     variant: markdown_github
 ---
-![](https://travis-ci.org/hrbrmstr/markdowntemplates.svg)
+[![Build Status](https://travis-ci.org/user/hrbrmstr/markdowntemplates?branch=master)](https://travis-ci.org/hrbrmstr/markdowntemplates)
 
 A package of R markdown templates.
 

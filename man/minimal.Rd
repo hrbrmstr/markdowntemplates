@@ -82,10 +82,8 @@ Template for creating an R markdown document with minimal markup
 }
 }
 \examples{
-tmp <- tempfile(fileext=".html")
-rmarkdown::render(system.file("extdata", "testrmds", "minimal.Rmd",
-                               package="markdowntemplates"),
-                  clean=TRUE, quiet=TRUE, output_file=tmp)
-unlink(tmp)
+\dontrun{
+rmarkdown::render("source.Rmd", clean=TRUE, quiet=TRUE, output_file="output.html")
+}
 }
 

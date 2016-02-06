@@ -84,10 +84,8 @@ Based on the \href{https://github.com/jgthms/bulma/}{Bulma CSS framework}.
 }
 }
 \examples{
-tmp <- tempfile(fileext=".html")
-rmarkdown::render(system.file("extdata", "testrmds", "bulma.Rmd",
-                               package="markdowntemplates"),
-                  clean=TRUE, quiet=TRUE, output_file=tmp)
-unlink(tmp)
+\dontrun{
+rmarkdown::render("source.Rmd", clean=TRUE, quiet=TRUE, output_file="output.html")
+}
 }
 

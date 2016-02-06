@@ -1,8 +1,0 @@
----
-title: "INSERT_TITLE_HERE"
-output:
-  markdowntemplates::skeleton:
-    self_contained: true
-    create_dir: false
----
-Test Rmd

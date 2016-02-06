@@ -84,11 +84,9 @@ Based on the \href{http://k1.imperavi.com/}{Kube 4.3 CSS framework}.
 }
 }
 \examples{
-tmp <- tempfile(fileext=".html")
-rmarkdown::render(system.file("extdata", "testrmds", "kube.Rmd",
-                               package="markdowntemplates"),
-                  clean=TRUE, quiet=TRUE, output_file=tmp)
-unlink(tmp)
+\dontrun{
+rmarkdown::render("source.Rmd", clean=TRUE, quiet=TRUE, output_file="output.html")
+}
 }
 \author{
 Kieran Healy \href{mailto:kjhealy@gmail.com}{kjhealy@gmail.com}
