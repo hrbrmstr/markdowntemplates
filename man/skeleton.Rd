@@ -86,4 +86,11 @@ Based on the \href{http://getskeleton.com/}{Skeleton CSS framework}.
 \figure{skeleton.png}{options: width="100\%" alt="Figure: skeleton example"}
 }
 }
+\examples{
+tmp <- tempfile(fileext=".html")
+rmarkdown::render(system.file("extdata", "testrmds", "skeleton.Rmd",
+                               package="markdowntemplates"),
+                  clean=TRUE, quiet=TRUE, output_file=tmp)
+unlink(tmp)
+}
 

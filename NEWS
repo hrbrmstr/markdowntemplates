@@ -1,5 +1,6 @@
 0.3.2.9000
 * basic template tests
+* rmarkdown::render examples added to template functions
 
 0.3.1.9000
 * CRAN checks

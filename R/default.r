@@ -15,7 +15,12 @@
 #' @inheritParams rmarkdown::html_document
 #' @param extra_dependencies,... Additional function arguments to pass to the
 #'        base R Markdown HTML output formatter
-#'
+#' @examples
+#' tmp <- tempfile(fileext=".html")
+#' rmarkdown::render(system.file("extdata", "testrmds", "skeleton.Rmd",
+#'                                package="markdowntemplates"),
+#'                   clean=TRUE, quiet=TRUE, output_file=tmp)
+#' unlink(tmp)
 #' @export
 skeleton <- function(number_sections = FALSE,
                      fig_width = 7,

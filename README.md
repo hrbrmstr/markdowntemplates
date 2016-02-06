@@ -1,3 +1,5 @@
+![](https://travis-ci.org/hrbrmstr/markdowntemplates.svg)
+
 A package of R markdown templates.
 
 These are a set of alternate R markdown templates that do not use Bootstrap and do not include or rely on jQuery. These are primarily here for demonstration purposes but are also useful in and of themselves (it's always good to have choices). If you have a particular framework you like and it's not here, file an issue and I'll add it.
@@ -11,7 +13,7 @@ When you use RStudio to create a new R Markdown document, select "From Template"
 
 ### Releases
 
-- 0.3.2.9000 Basic template tests
+- 0.3.2.9000 Basic template tests; `rmarkdown::render` examples added to template functions
 - 0.3.1.9000 Passes CRAN checks
 - 0.3.0.9000 Kube framework contributed by Kieran Healy; preview images in help pages
 - 0.2.1.9000 arbitrary footer content can be specified in the YAML header

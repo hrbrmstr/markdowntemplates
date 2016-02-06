@@ -81,4 +81,11 @@ Template for creating an R markdown document with minimal markup
 \figure{minimal.png}{options: width="100\%" alt="Figure: minimal example"}
 }
 }
+\examples{
+tmp <- tempfile(fileext=".html")
+rmarkdown::render(system.file("extdata", "testrmds", "minimal.Rmd",
+                               package="markdowntemplates"),
+                  clean=TRUE, quiet=TRUE, output_file=tmp)
+unlink(tmp)
+}
 

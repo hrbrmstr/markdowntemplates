@@ -83,6 +83,13 @@ Based on the \href{http://k1.imperavi.com/}{Kube 4.3 CSS framework}.
 \figure{kube.png}{options: width="100\%" alt="Figure: kube example"}
 }
 }
+\examples{
+tmp <- tempfile(fileext=".html")
+rmarkdown::render(system.file("extdata", "testrmds", "kube.Rmd",
+                               package="markdowntemplates"),
+                  clean=TRUE, quiet=TRUE, output_file=tmp)
+unlink(tmp)
+}
 \author{
 Kieran Healy \href{mailto:kjhealy@gmail.com}{kjhealy@gmail.com}
 }
