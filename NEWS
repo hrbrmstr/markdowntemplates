@@ -1,3 +1,6 @@
+0.2.1.9000
+* arbitrary footer content can be specified in the YAML header
+
 0.2.0.9000
 * `self_contained=FALSE` now copies the custom CSS
 * Bulma `base.html` template fixed (navtitle/navlink weren't working)

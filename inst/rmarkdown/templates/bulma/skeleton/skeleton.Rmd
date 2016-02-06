@@ -3,6 +3,9 @@ title: "INSERT_TITLE_HERE"
 author: "AUTHOR"
 navtitle: "NAVTITLE"
 navlink: "http://NAVLINK/"
+footer:
+  - content: '<a href="link">text</a> • <a href="link2">text2</a><br/>'
+  - content: 'Copyright blah blah'
 date: "`r Sys.Date()`"
 output: markdowntemplates::bulma
 ---

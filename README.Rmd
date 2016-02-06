@@ -19,6 +19,7 @@ When you use RStudio to create a new R Markdown document, select "From Template"
 
 ### Releases
 
+- 0.2.1.9000 arbitrary footer content can be specified in the YAML header
 - 0.2.0.9000 `self_contained=FALSE` now copies the custom CSS
 - 0.1.0.9000 Initial release
 

@@ -105,10 +105,19 @@ $for(include-after)$
 $include-after$
 $endfor$
 
-<div class="ftr">
-  <a target="_blank" href="#">link</a> •
-  <a target="_blank" href="#">link</a>
-</div>
+<footer class="footer">
+  <div class="container">
+    <div class="content is-centered ftr">
+      <p>
+$for(footer)$
+$if(footer.content)$
+$footer.content$
+$endif$
+$endfor$
+      </p>
+    </div>
+  </div>
+</footer>
 
 </div>
   </section>
