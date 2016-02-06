@@ -1,0 +1,4 @@
+name: Kube Template
+description: >
+  Kube template
+create_dir: true

@@ -2,6 +2,7 @@
 
 export(bulma)
 export(default)
+export(kube)
 export(minimal)
 export(skeleton)
 import(htmltools)
