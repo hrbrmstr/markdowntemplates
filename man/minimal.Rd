@@ -35,9 +35,9 @@ ellipses.}
 
 \item{self_contained}{Produce a standalone HTML file with no external
 dependencies, using data: URIs to incorporate the contents of linked
-scripts, stylesheets, images, and videos. Note that even for self contained
-documents MathJax is still loaded externally (this is necessary because of
-it's size).}
+scripts, stylesheets, images, and videos. Note that even for self
+contained documents MathJax is still loaded externally (this is
+necessary because of it's size).}
 
 \item{highlight}{Syntax highlighting style. Supported styles include
 "default", "tango", "pygments", "kate", "monochrome", "espresso",
@@ -48,6 +48,9 @@ highlighting.}
 the official MathJax CDN. The "local" option uses a local version of
 MathJax (which is copied into the output directory). You can pass an
 alternate URL or pass \code{NULL} to exclude MathJax entirely.}
+
+\item{extra_dependencies, ...}{Additional function arguments to pass to the
+base R Markdown HTML output formatter}
 
 \item{css}{One or more css files to include}
 
@@ -65,9 +68,6 @@ default definition or R Markdown. See the \code{\link{rmarkdown_format}}
 for additional details.}
 
 \item{pandoc_args}{Additional command line options to pass to pandoc}
-
-\item{...}{Additional function arguments to pass to the base R Markdown HTML
-output formatter}
 }
 \description{
 Template for creating an R markdown document with minimal markup

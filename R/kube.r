@@ -12,9 +12,10 @@
 #' \figure{kube.png}{options: width="100\%" alt="Figure: kube example"}
 #' }
 #'
-
 #' @author Kieran Healy \href{mailto:kjhealy@gmail.com}{kjhealy@gmail.com}
 #' @inheritParams rmarkdown::html_document
+#' @param extra_dependencies,... Additional function arguments to pass to the
+#'        base R Markdown HTML output formatter
 #'
 #' @export
 kube <- function(number_sections = FALSE,

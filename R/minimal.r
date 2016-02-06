@@ -10,8 +10,9 @@
 #' \figure{minimal.png}{options: width="100\%" alt="Figure: minimal example"}
 #' }
 #'
-
 #' @inheritParams rmarkdown::html_document
+#' @param extra_dependencies,... Additional function arguments to pass to the
+#'        base R Markdown HTML output formatter
 #'
 #' @export
 minimal <- function(number_sections = FALSE,
