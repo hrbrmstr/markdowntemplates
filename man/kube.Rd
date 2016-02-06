@@ -79,6 +79,10 @@ Based on the \href{http://k1.imperavi.com/}{Kube 4.3 CSS framework}.
 \if{html}{
 \figure{kube.png}{options: width="100\%" alt="Figure: kube example"}
 }
+
+\if{latex}{
+\figure{kube.pdf}{options: width=10cm}
+}
 }
 \section{YAML Frontmatter}{
 
@@ -89,10 +93,6 @@ author: "AUTHOR"
 date: "`r Sys.Date()`"
 output: markdowntemplates::kube
 ---}
-
-\if{latex}{
-\figure{kube.png}{options: width="100\%" alt="Figure: kube example"}
-}
 }
 \examples{
 \dontrun{

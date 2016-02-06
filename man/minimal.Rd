@@ -79,7 +79,7 @@ Template for creating an R markdown document with minimal markup
 }
 
 \if{latex}{
-\figure{minimal.png}{options: width="100\%" alt="Figure: minimal example"}
+\figure{minimal.pdf}{options: width=10cm}
 }
 }
 \section{YAML Frontmatter}{

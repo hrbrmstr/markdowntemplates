@@ -7,6 +7,11 @@
 #' \if{html}{
 #' \figure{kube.png}{options: width="100\%" alt="Figure: kube example"}
 #' }
+#'
+#' \if{latex}{
+#' \figure{kube.pdf}{options: width=10cm}
+#' }
+#'
 #' @encoding UTF-8
 #' @section  YAML Frontmatter:
 #' The following example shows all possible YAML frontmatter options:
@@ -16,10 +21,6 @@
 #' date: "`r Sys.Date()`"
 #' output: markdowntemplates::kube
 #' ---}
-#'
-#' \if{latex}{
-#' \figure{kube.png}{options: width="100\%" alt="Figure: kube example"}
-#' }
 #'
 #' @author Kieran Healy \href{mailto:kjhealy@gmail.com}{kjhealy@gmail.com}
 #' @inheritParams rmarkdown::html_document

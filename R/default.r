@@ -9,8 +9,9 @@
 #' }
 #'
 #' \if{latex}{
-#' \figure{skeleton.png}{options: width="100\%" alt="Figure: skeleton example"}
+#' \figure{skeleton.pdf}{options: width=10cm}
 #' }
+#'
 #' @encoding UTF-8
 #' @section  YAML Frontmatter:
 #' The following example shows all possible YAML frontmatter options:

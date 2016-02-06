@@ -7,7 +7,7 @@
 #' }
 #'
 #' \if{latex}{
-#' \figure{minimal.png}{options: width="100\%" alt="Figure: minimal example"}
+#' \figure{minimal.pdf}{options: width=10cm}
 #' }
 #' @encoding UTF-8
 #' @section  YAML Frontmatter:

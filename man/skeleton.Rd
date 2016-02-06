@@ -84,7 +84,7 @@ Based on the \href{http://getskeleton.com/}{Skeleton CSS framework}.
 }
 
 \if{latex}{
-\figure{skeleton.png}{options: width="100\%" alt="Figure: skeleton example"}
+\figure{skeleton.pdf}{options: width=10cm}
 }
 }
 \section{YAML Frontmatter}{

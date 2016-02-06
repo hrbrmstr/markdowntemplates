@@ -9,7 +9,7 @@
 #' }
 #'
 #' \if{latex}{
-#' \figure{bulma.png}{options: width="100\%" alt="Figure: bulma example"}
+#' \figure{bulma.pdf}{options: width=10cm}
 #' }
 #' @encoding UTF-8
 #' @section  YAML Frontmatter:

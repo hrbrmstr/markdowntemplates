@@ -81,7 +81,7 @@ Based on the \href{https://github.com/jgthms/bulma/}{Bulma CSS framework}.
 }
 
 \if{latex}{
-\figure{bulma.png}{options: width="100\%" alt="Figure: bulma example"}
+\figure{bulma.pdf}{options: width=10cm}
 }
 }
 \section{YAML Frontmatter}{
