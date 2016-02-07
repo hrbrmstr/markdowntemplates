@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/user/hrbrmstr/markdowntemplates?branch=master)](https://travis-ci.org/hrbrmstr/markdowntemplates)
+[![Build Status](https://travis-ci.org/hrbrmstr/markdowntemplates.svg)](https://travis-ci.org/hrbrmstr/markdowntemplates)
 
 A package of R markdown templates.
 
