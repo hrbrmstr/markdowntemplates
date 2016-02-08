@@ -18,6 +18,18 @@ These are a set of alternate R markdown templates that do not use Bootstrap and 
 
 When you use RStudio to create a new R Markdown document, select "From Template" and choose one of these templates.
 
+### Installation
+
+Since the package is not on CRAN yet, you have to install it from GitHub.
+
+```
+if (!("devtools" %in% installed.packages())){
+  install.packages("devtools")
+}
+
+devtools::install_github("hrbrmstr/markdowntemplates")
+```
+
 ### Releases
 
 - 0.3.3.9000 Replicate Bulma functionality in Skeleton/default; added supported YAML frontmatter to template functions docs
