@@ -32,6 +32,7 @@ devtools::install_github("hrbrmstr/markdowntemplates")
 
 ### Releases
 
+- 0.3.4.9000 TOC basic formattingin Bulma (and re-enabled TOC in general)
 - 0.3.3.9000 Replicate Bulma functionality in Skeleton/default; added supported YAML frontmatter to template functions docs
 - 0.3.2.9000 Basic template tests; `rmarkdown::render` examples added to template functions
 - 0.3.1.9000 Passes CRAN checks

@@ -44,6 +44,8 @@ skeleton <- function(number_sections = FALSE,
                      fig_retina = if (!fig_caption) 2,
                      fig_caption = FALSE,
                      dev = 'png',
+                     toc = FALSE,
+                     toc_depth = 3,
                      smart = TRUE,
                      self_contained = TRUE,
                      highlight = "default",
@@ -57,8 +59,6 @@ skeleton <- function(number_sections = FALSE,
                      pandoc_args = NULL,
                      ...) {
 
-  toc <- FALSE
-  toc_depth <- 3
   theme <- NULL
   template <- "default"
   code_folding <- "none"

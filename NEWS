@@ -1,3 +1,6 @@
+0.3.4.9000
+* added TOC basic formattingin Bulma (and re-enabled TOC in general)
+
 0.3.3.9000
 * Skeleton template now matches Bulma in terms of YAML frontmatter support
 * added YAML frontmatter documentation in template functions

@@ -7,9 +7,9 @@
 \usage{
 bulma(number_sections = FALSE, fig_width = 7, fig_height = 5,
   fig_retina = if (!fig_caption) 2, fig_caption = FALSE, dev = "png",
-  smart = TRUE, self_contained = TRUE, highlight = "default",
-  mathjax = "default", extra_dependencies = NULL, css = NULL,
-  includes = NULL, keep_md = FALSE, lib_dir = NULL,
+  toc = FALSE, toc_depth = 3, smart = TRUE, self_contained = TRUE,
+  highlight = "default", mathjax = "default", extra_dependencies = NULL,
+  css = NULL, includes = NULL, keep_md = FALSE, lib_dir = NULL,
   md_extensions = NULL, pandoc_args = NULL, ...)
 }
 \arguments{
@@ -30,15 +30,19 @@ markdown document).}
 
 \item{dev}{Graphics device to use for figure output (defaults to png)}
 
+\item{toc}{\code{TRUE} to include a table of contents in the output}
+
+\item{toc_depth}{Depth of headers to include in table of contents}
+
 \item{smart}{Produce typographically correct output, converting straight
 quotes to curly quotes, --- to em-dashes, -- to en-dashes, and ... to
 ellipses.}
 
 \item{self_contained}{Produce a standalone HTML file with no external
 dependencies, using data: URIs to incorporate the contents of linked
-scripts, stylesheets, images, and videos. Note that even for self
-contained documents MathJax is still loaded externally (this is
-necessary because of it's size).}
+scripts, stylesheets, images, and videos. Note that even for self contained
+documents MathJax is still loaded externally (this is necessary because of
+it's size).}
 
 \item{highlight}{Syntax highlighting style. Supported styles include
 "default", "tango", "pygments", "kate", "monochrome", "espresso",
