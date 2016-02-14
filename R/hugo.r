@@ -15,8 +15,7 @@ hugo <- function(toc = FALSE,
                           dev = 'png',
                           includes = NULL,
                           md_extensions = NULL,
-                          pandoc_args = NULL,
-                          html_preview = TRUE) {
+                          pandoc_args = NULL) {
 
   # add special markdown rendering template to ensure we include the title fields
   pandoc_args <- c(pandoc_args, "--template",
