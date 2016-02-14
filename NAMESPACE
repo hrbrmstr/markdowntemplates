@@ -2,6 +2,7 @@
 
 export(bulma)
 export(default)
+export(hugo_document)
 export(kube)
 export(minimal)
 export(skeleton)

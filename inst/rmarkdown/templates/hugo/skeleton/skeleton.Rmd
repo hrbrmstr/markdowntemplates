@@ -1,0 +1,42 @@
+---
+title: "INSERT_TITLE_HERE"
+slug: "SLUG"
+author: "AUTHOR"
+date: "YYYY-MM-DD"
+output: markdowntemplates::hugo_document
+---
+```{r setup, include=FALSE}
+library(knitr)
+
+knit_hooks$set(plot=function(x, options) {
+  sprintf("<img src='/%s%s-%d.%s'/>", 
+          options$fig.path, options$label, options$fig.cur, options$fig.ext)
+
+})
+
+opts_chunk$set(
+  echo=TRUE,
+  fig.path="static/first-post/"
+)
+```
+## GitHub Documents
+
+This is an R Markdown format used for publishing markdown documents to GitHub. When you click the **Knit** button all R code chunks are run and a markdown file (.md) suitable for publishing to GitHub is generated.
+
+## Including Code
+
+You can include R code in the document as follows:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
