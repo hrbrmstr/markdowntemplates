@@ -3,7 +3,7 @@ title: "INSERT_TITLE_HERE"
 slug: "SLUG"
 author: "AUTHOR"
 date: "YYYY-MM-DD"
-output: markdowntemplates::hugo_document
+output: markdowntemplates::hugo
 ---
 ```{r setup, include=FALSE}
 library(knitr)

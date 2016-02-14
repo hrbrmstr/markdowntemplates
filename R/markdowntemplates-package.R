@@ -23,6 +23,12 @@
 #'
 #' \item \code{minimal} (\code{output: markdowntemplates::minimal}) uses no CSS framework and
 #' only uses the `title` YAML header element.
+#'
+#' \item \code{hugo} (\code{output: markdowntemplates::hugo}) produces markdown suitable
+#' for \href{https://gohugo.io/}{Hugo} websites. It makes a broad assumption that you
+#' will save/use the \code{hugo} document in the \code{content} directory of your Hugo
+#' websites.
+#'
 #'}
 #' When you use RStudio to create a new R Markdown document, select "From
 #' Template" and choose one of these templates.

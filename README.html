@@ -116,6 +116,7 @@ $(document).ready(function () {
 <li><strong>skeleton</strong> (<code>output: markdowntemplates::skeleton</code>) or <strong>default</strong> (<code>output: markdowntemplates::default</code>) uses the <a href="http://getskeleton.com">Skeleton CSS framework</a> and has optional <code>navlink</code> YAML header elements and also has support for arbitrary footer content &amp; a subset of OpenGraph tags (see the example Rmd) which will be used in header of the generated file.</li>
 <li><strong>kube</strong> (<code>output: markdowntemplates::kube</code>) uses the <a href="https://imperavi.com/kube/">Kube CSS framework</a> (contributed by Kieran Healy)</li>
 <li><strong>minimal</strong> (<code>output: markdowntemplates::minimal</code>) uses no CSS framework and only uses the <code>title</code> YAML header element.</li>
+<li><strong>hugo</strong> (<code>output: markdowntemplates::hugo</code>) produces markdown suitable for <a href="https://gohugo.io/">Hugo</a> websites. It makes a broad assumption that you will save/use the <code>hugo</code> document in the <code>content</code> directory of your Hugo websites.</li>
 </ul>
 <p>When you use RStudio to create a new R Markdown document, select “From Template” and choose one of these templates.</p>
 <div id="installation" class="section level3">

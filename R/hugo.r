@@ -8,7 +8,7 @@
 #' @return R Markdown output format to pass to \code{\link{render}}
 #'
 #' @export
-hugo_document <- function(toc = FALSE,
+hugo <- function(toc = FALSE,
                           toc_depth = 3,
                           fig_width = 7,
                           fig_height = 5,
