@@ -17,12 +17,11 @@ hugo(toc = FALSE, toc_depth = 3, fig_width = 7, fig_height = 5,
 
 \item{fig_height}{Default width (in inches) for figures}
 
-\item{fig_retina}{Scaling to perform for retina displays (defaults to 2 when
-\code{fig_caption} is \code{FALSE}, which currently works for all widely
-used retina displays). Set to \code{NULL} to prevent retina scaling. Note
-that this will always be \code{NULL} when \code{keep_md} is specified (this
-is because \code{fig_retina} relies on outputting HTML directly into the
-markdown document).}
+\item{fig_retina}{Scaling to perform for retina displays. Defaults to
+\code{NULL} which performs no scaling. A setting of 2 will work for all
+widely used retina displays, but will also result in the output of
+\code{<img>} tags rather than markdown images due to the need to set the
+width of the image explicitly.}
 
 \item{dev}{Graphics device to use for figure output (defaults to png)}
 
@@ -30,8 +29,8 @@ markdown document).}
 document (typically created using the \code{\link{includes}} function).}
 
 \item{md_extensions}{Markdown extensions to be added or removed from the
-default definition or R Markdown. See the \code{\link{rmarkdown_format}}
-for additional details.}
+default definition or R Markdown. See the \code{\link{rmarkdown_format}} for
+additional details.}
 
 \item{pandoc_args}{Additional command line options to pass to pandoc}
 }

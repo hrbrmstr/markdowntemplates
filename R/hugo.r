@@ -2,7 +2,6 @@
 #'
 #' Format for converting from R Markdown to markdown for Hugo
 #'
-#' @inheritParams rmarkdown::html_document
 #' @inheritParams rmarkdown::md_document
 #'
 #' @return R Markdown output format to pass to \code{\link{render}}
