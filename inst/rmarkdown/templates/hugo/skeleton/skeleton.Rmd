@@ -1,6 +1,6 @@
 ---
 title: "INSERT_TITLE_HERE"
-slug: "SLUG"
+slug: "INSERT_SLUG_HERE"
 author: "AUTHOR"
 date: "YYYY-MM-DD"
 output: markdowntemplates::hugo
@@ -16,7 +16,7 @@ knit_hooks$set(plot=function(x, options) {
 
 opts_chunk$set(
   echo=TRUE,
-  fig.path="static/first-post/"
+  fig.path="static/INSERT_SLUG_HERE/"
 )
 ```
 ## GitHub Documents
