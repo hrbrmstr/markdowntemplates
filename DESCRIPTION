@@ -20,5 +20,6 @@ Depends:
 Imports:
     knitr,
     rmarkdown,
-    htmltools
+    htmltools,
+    tools
 RoxygenNote: 5.0.1

@@ -41,6 +41,6 @@ When you use RStudio to create a new R Markdown document, select "From
 Template" and choose one of these templates.
 }
 \author{
-Bob Rudis (@hrbrmstr)
+Bob Rudis (bob@rud.is)
 }
 
