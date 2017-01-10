@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/hrbrmstr/markdowntemplates.svg)](https://travis-ci.org/hrbrmstr/markdowntemplates)
 
-A package of R markdown templates.
+A package of R markdown templates and knitr knit engine replacments
 
 These are a set of alternate R markdown templates that do not use Bootstrap and do not include or rely on jQuery. These are primarily here for demonstration purposes but are also useful in and of themselves (it's always good to have choices). If you have a particular framework you like and it's not here, file an issue and I'll add it.
 
@@ -11,6 +11,10 @@ These are a set of alternate R markdown templates that do not use Bootstrap and 
 - **hugo** (`output: markdowntemplates::hugo`) produces markdown suitable for [Hugo](https://gohugo.io/) websites. It makes a broad assumption that you will save/use the `hugo` document in the `content` directory of your Hugo websites. 
 
 When you use RStudio to create a new R Markdown document, select "From Template" and choose one of these templates.
+
+### knit engine replacements
+
+- `to_jupyter()` : uses `notedown` to make an `ipynb` out of an Rmd
 
 ### Installation
 

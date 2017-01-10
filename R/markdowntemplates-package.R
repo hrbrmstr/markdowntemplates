@@ -1,4 +1,4 @@
-#' Alternate R markdown templates
+#' A package of R markdown templates and knitr knit engine replacments
 #'
 #' These are a set of alternate R markdown templates that do not use Bootstrap
 #' and do not include or rely on jQuery. These are primarily here for
