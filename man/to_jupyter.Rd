@@ -14,7 +14,7 @@ to_jupyter(inputFile, encoding)
 \description{
 This function calls the python program \code{notedown} on \code{inputFile}
 and returns the converted Rmd filename to the console and tries to open
-the converted notebook in a browser by calling \code{jupyter notebook}.
+the converted notebook in a browser after calling \code{jupyter nbconvert}.
 }
 \details{
 Much is assumed (like, you have python installed and setup correctly and

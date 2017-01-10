@@ -8,6 +8,19 @@ from_rmarkdown <- function (implicit_figures = TRUE, extensions = NULL) {
   rmarkdown_format(extensions)
 }
 
+from_rst <-function (extensions = NULL) {
+    format <- c("rst")
+    addExtension <- function(extension) {
+        if (length(grep(extension, extensions)) == 0)
+            format <<- c(format, paste0("+", extension))
+    }
+    addExtension("autolink_bare_uris")
+    addExtension("ascii_identifiers")
+    addExtension("tex_math_single_backslash")
+    format <- c(format, extensions, recursive = TRUE)
+    paste(format, collapse = "")
+}
+
 pandoc_html_highlight_args <- function (highlight, template, self_contained,
                                         files_dir, output_dir)  {
   args <- c()

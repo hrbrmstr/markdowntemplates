@@ -2,7 +2,7 @@
 #'
 #' This function calls the python program \code{notedown} on \code{inputFile}
 #' and returns the converted Rmd filename to the console and tries to open
-#' the converted notebook in a browser by calling \code{jupyter notebook}.
+#' the converted notebook in a browser after calling \code{jupyter nbconvert}.
 #'
 #' Much is assumed (like, you have python installed and setup correctly and
 #' also have \code{notedown} installed and setup correctly).
@@ -63,27 +63,51 @@
 to_jupyter <- function(inputFile, encoding) {
 
   message("Started converting R Markdown to Jupyter Notebook...")
-  output_file <-  sprintf("%s.%s", tools::file_path_sans_ext(inputFile), "ipynb")
+  message(" - Locating [notedown]...")
 
-  tf <- tempfile(fileext=".Rmd")
+  cmd <- Sys.which("notedown")
 
-  message(" - stripping YAML header")
-  tmp <- readLines(inputFile)
-  yaml_end <- which(grepl("^---", tmp))[2]
-  writeLines(tmp[(yaml_end+1):length(tmp)], tf)
+  if (cmd == "") {
 
-  message(" - running notedown...")
-  system2("notedown", args=c(tf, "--rmagic", "--run"), stdout=output_file)
+    message("   ==> [notedown] not found. Please see <https://github.com/aaren/notedown> for installation help.")
+    invisible(NULL)
 
-  message("Completed conversion.")
-  Sys.sleep(0.5)
+  } else {
 
-  unlink(tf)
+    message("   ==> [notedown] located! Proceeding with conversion")
 
-  cat(sprintf("Output file is at: [%s]", output_file))
+    output_file <-  sprintf("%s.%s", tools::file_path_sans_ext(inputFile), "ipynb")
 
-  system2("jupyter", args=c("notebook", output_file))
+    tf <- tempfile(fileext=".Rmd")
 
-  invisible(output_file)
+    message(" - stripping YAML header")
+    tmp <- readLines(inputFile)
+    yaml_end <- which(grepl("^---", tmp))[2]
+    writeLines(tmp[(yaml_end+1):length(tmp)], tf)
+
+    message(" - running notedown...")
+    system2(cmd, args=c(tf, "--rmagic", "--run"), stdout=output_file)
+
+    message("Completed conversion.")
+    Sys.sleep(0.5)
+
+    unlink(tf)
+
+    message(sprintf("\nOutput file is at: [%s]\n", output_file))
+
+    cmd <- Sys.which("jupyter")
+    html_file <-  sprintf("%s.%s", tools::file_path_sans_ext(inputFile), "html")
+
+    out <- system2(cmd, args=c("nbconvert", "--to html", output_file, "--output", html_file),
+                   stdout=TRUE, stderr=TRUE, wait=TRUE)
+
+    message(sprintf("\nHTML preview is at: [%s]\n", html_file))
+
+    utils::browseURL(html_file)
+
+    output_file
+
+  }
+
 
 }
