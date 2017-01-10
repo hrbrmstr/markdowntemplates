@@ -18,4 +18,3 @@ to_jupyter <- function(inputFile, encoding) {
   output_file
 
 }
-
