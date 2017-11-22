@@ -3,7 +3,7 @@ Type: Package
 Title: Alternate R Markdown Templates
 Version: 0.3.3.9000
 Date: 2016-02-06
-Author: Bob Rudis (@hrbrmstr), Kieran Healy <kjhealy@gmail.com>
+Author: Bob Rudis (@hrbrmstr), Kieran Healy <kjhealy@gmail.com>, Marc-André Désautels <marc-andre.desautels@cstjean.qc.ca>
 Maintainer: Bob Rudis <bob@rudis.net>
 Description: A set of alternate R markdown templates that do not
     use Bootstrap and do not include or rely on jQuery.
