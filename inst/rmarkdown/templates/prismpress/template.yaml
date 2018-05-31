@@ -1,0 +1,4 @@
+name: PrismPress
+description: >
+  WordPress + Jetpack Markdown + Prism
+create_dir: false

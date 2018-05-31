@@ -70,4 +70,3 @@ ggplot(iris, aes(x = Sepal.Length, y = Petal.Length)) +
 ```
 }
 }
-

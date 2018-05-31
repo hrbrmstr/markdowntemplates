@@ -1,10 +1,15 @@
 Package: markdowntemplates
 Type: Package
 Title: Alternate R Markdown Templates
-Version: 0.3.3.9000
-Date: 2016-02-06
+Version: 0.4.0
+Date: 2018-05-31
+Authors@R: c(
+    person("Bob", "Rudis", email = "bob@rud.is", role = c("aut", "cre"), 
+           comment = c(ORCID = "0000-0001-5670-2640")),
+    person("Kieran", "Healy", email = "kjhealy@gmail.com", role = c("aut", "ctb"))
+  )
 Author: Bob Rudis (@hrbrmstr), Kieran Healy <kjhealy@gmail.com>
-Maintainer: Bob Rudis <bob@rudis.net>
+Maintainer: Bob Rudis <bob@rud.is>
 Description: A set of alternate R markdown templates that do not
     use Bootstrap and do not include or rely on jQuery.
 URL: http://github.com/hrbrmstr/markdowntemplates
@@ -22,4 +27,5 @@ Imports:
     rmarkdown,
     htmltools,
     tools
-RoxygenNote: 5.0.1
+Encoding: UTF-8
+RoxygenNote: 6.0.1.9000

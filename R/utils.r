@@ -1,5 +1,9 @@
 # Most (if not all) from github.com/rstudio/rmarkdown
 
+pandoc2.0 <- function() {
+  rmarkdown::pandoc_available("2.0")
+}
+
 from_rmarkdown <- function (implicit_figures = TRUE, extensions = NULL) {
   extensions <- paste0(extensions, collapse = "")
   extensions <- gsub(" ", "", extensions)
