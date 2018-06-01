@@ -13,6 +13,8 @@ good to have choices). If you have a particular framework you like and it's
 not here, file an issue and I'll add it.
 }
 \details{
+Two new ones are for a very specific WordPress setup and another is just for me.
+
 \itemize{
 \item \code{bulma} (\code{output: markdowntemplates::bulma}) uses the Bulma CSS
 framework and has optional \code{navlink} YAML

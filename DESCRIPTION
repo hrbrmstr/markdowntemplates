@@ -11,7 +11,8 @@ Authors@R: c(
 Author: Bob Rudis (@hrbrmstr), Kieran Healy <kjhealy@gmail.com>
 Maintainer: Bob Rudis <bob@rud.is>
 Description: A set of alternate R markdown templates that do not
-    use Bootstrap and do not include or rely on jQuery.
+    use Bootstrap and do not include or rely on jQuery. Also a template for
+    a very specific WordPress setup and one just for me.
 URL: http://github.com/hrbrmstr/markdowntemplates
 BugReports: https://github.com/hrbrmstr/markdowntemplates/issues
 License: MIT + file LICENSE

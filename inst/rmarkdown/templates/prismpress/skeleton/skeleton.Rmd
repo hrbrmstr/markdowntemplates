@@ -5,6 +5,8 @@ output: markdowntemplates::prismpress
 
 ```{r setup, include=FALSE}
 knitr::knit_hooks$set(source = markdowntemplates::prismpress_source_hook) ## DO NOT DELETE THIS LINE
+knitr::knit_hooks$set(optipng = knitr::hook_optipng) ## DO NOT DELETE THIS LINE
+knitr::knit_hooks$set(pngquant = knitr::hook_pngquant) ## DO NOT DELETE THIS LINE
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
@@ -16,7 +18,7 @@ This is an R Markdown format used for publishing markdown documents to GitHub. W
 
 You can include R code in the document as follows:
 
-```{r cars}
+```{r cars, optipng = '-o7', fig.width=10, fig.height=10}
 summary(cars)
 ```
 

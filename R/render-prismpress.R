@@ -1,3 +1,8 @@
+optipng = function(dir = '.') {
+  files = list.files(dir, '[.]png$', recursive = TRUE, full.names = TRUE)
+  for (f in files) system2('optipng', shQuote(f))
+}
+
 hook_r = function(x, options) {
   language = tolower(options$engine)
   if (language == 'node') language = 'javascript'

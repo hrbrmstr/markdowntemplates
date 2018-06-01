@@ -2,7 +2,9 @@
 
 export(bulma)
 export(default)
+export(hrbrmrkdn)
 export(hugo)
+export(kickstart)
 export(kube)
 export(minimal)
 export(prism_press_chunk_hook)

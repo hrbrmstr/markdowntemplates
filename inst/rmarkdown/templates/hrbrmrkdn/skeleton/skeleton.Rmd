@@ -1,0 +1,18 @@
+---
+title: "My Super Spiffy Markdown Thing"
+output: markdowntemplates::hrbrmrkdn
+---
+```{r include=FALSE}
+knitr::opts_chunk$set(
+  message = FALSE, warning = FALSE, echo = TRUE, fig.retina = 2
+)
+knitr::knit_hooks$set(chunk = markdowntemplates:::chunk_hook_html) # DO NOT DELETE - NECESSARY FOR PRISM
+knitr::knit_hooks$set(optipng = knitr::hook_optipng) # DELETE ONLY IF YOU DON'T WANT COMPRESSION
+knitr::knit_hooks$set(pngquant = knitr::hook_pngquant) # DELETE ONLY IF YOU DON'T WANT COMPRESSION
+```
+```{r template-setup}
+library(firasans)
+library(hrbrthemes)
+library(stringi)
+library(tidyverse)
+```
