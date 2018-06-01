@@ -1,3 +1,10 @@
+---
+output:
+  html_document:
+    keep_md: true
+  md_document:
+    variant: markdown_github
+---
 [![Build Status](https://travis-ci.org/hrbrmstr/markdowntemplates.svg)](https://travis-ci.org/hrbrmstr/markdowntemplates)
 
 A package of R markdown templates and knitr knit engine replacments
@@ -9,6 +16,7 @@ These are a set of alternate R markdown templates that do not use Bootstrap and 
 - **kube** (`output: markdowntemplates::kube`) uses the [Kube CSS framework](https://imperavi.com/kube/) (contributed by Kieran Healy)
 - **minimal** (`output: markdowntemplates::minimal`) uses no CSS framework and only uses the `title` YAML header element.
 - **hugo** (`output: markdowntemplates::hugo`) produces markdown suitable for [Hugo](https://gohugo.io/) websites. It makes a broad assumption that you will save/use the `hugo` document in the `content` directory of your Hugo websites. 
+- **prismpress** (`output: markdowntemplates::prismpress`) produces markdown suitable for use in WordPress with Jetpack (markdown-enabled) and Prism
 
 When you use RStudio to create a new R Markdown document, select "From Template" and choose one of these templates.
 
@@ -30,6 +38,7 @@ devtools::install_github("hrbrmstr/markdowntemplates")
 
 ### Releases
 
+- 0.4.0.9999 `to_jupyter()`
 - 0.3.4.9000 TOC basic formattingin Bulma (and re-enabled TOC in general)
 - 0.3.3.9000 Replicate Bulma functionality in Skeleton/default; added supported YAML frontmatter to template functions docs
 - 0.3.2.9000 Basic template tests; `rmarkdown::render` examples added to template functions
