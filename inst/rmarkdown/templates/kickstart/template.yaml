@@ -1,0 +1,4 @@
+name: Kickstart template
+description: >
+  Kickstart CSS-based template
+create_dir: true

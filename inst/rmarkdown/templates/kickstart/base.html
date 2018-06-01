@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!-- Bulma -->
+<html xmlns="http://www.w3.org/1999/xhtml"$if(lang)$ lang="$lang$" xml:lang="$lang$"$endif$>
+
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+$if(title)$<meta property="og:title" content="$title$" />$endif$
+$if(og)$
+<meta property="og:type" content="$if(og.type)$$og.type$$else$article$endif$" />
+$if(og.url)$<meta property="og:url" content="$og.url$" />$endif$
+$if(og.image)$<meta property="og:image" content="$og.image$" />$endif$
+$else$
+<meta property="og:type" content="article" />
+$endif$
+
+$for(author-meta)$
+<meta name="author" content="$author-meta$" />
+$endfor$
+
+$if(date-meta)$
+<meta name="date" content="$date-meta$" />
+$endif$
+
+<title>$if(title-prefix)$$title-prefix$ - $endif$$pagetitle$</title>
+
+$for(header-includes)$
+$header-includes$
+$endfor$
+
+$if(highlightjs)$
+<style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet"
+      href="$highlightjs$/$if(highlightjs-theme)$$highlightjs-theme$$else$default$endif$.css"
+      $if(html5)$$else$type="text/css" $endif$/>
+<script src="$highlightjs$/highlight.js"></script>
+<script type="text/javascript">
+if (window.hljs && document.readyState && document.readyState === "complete") {
+   window.setTimeout(function() {
+      hljs.initHighlighting();
+   }, 0);
+}
+</script>
+$endif$
+
+$if(highlighting-css)$
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+$highlighting-css$
+</style>
+$endif$
+
+$for(css)$
+<link rel="stylesheet" href="$css$" $if(html5)$$else$type="text/css" $endif$/>
+$endfor$
+
+</head>
+
+<body>
+<div class="grid">
+  <div class="col_9">
+
+<header class="header" style="margin-bottom:40px">
+  <div class="container">
+    <!-- Left side -->
+    <div class="header-left">
+      <div class="header-item">
+        <b>$if(navlink)$$navlink$$endif$</b>
+      </div>
+    </div>
+
+  </div>
+</header>
+
+$for(include-before)$
+$include-before$
+$endfor$
+
+$if(title)$
+<div id="$idprefix$header">
+<h1 class="title">$title$</h1>
+$if(subtitle)$
+<h3 class="subtitle"><em>$subtitle$</em></h3>
+$endif$
+
+<div class="authordate">
+$for(author)$
+$if(author.name)$
+<span class="author"><em>$author.name$</em></span>
+$else$
+<span class="author"><em>$author$</em></span>
+$endif$
+$endfor$
+$if(date)$
+• <span class="date"><em>$date$</em></span>
+$endif$
+</div>
+$endif$
+</div>
+
+$if(toc)$
+<div id="$idprefix$TOC">
+$toc$
+</div>
+$endif$
+
+$body$
+
+$for(include-after)$
+$include-after$
+$endfor$
+
+<footer class="footer">
+  <div class="container">
+    <div class="content is-centered ftr">
+      <p>
+$for(footer)$
+$if(footer.content)$
+$footer.content$
+$endif$
+$endfor$
+      </p>
+    </div>
+  </div>
+</footer>
+  </div>
+</div>
+
+$if(mathjax-url)$
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "$mathjax-url$";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+$endif$
+</body>
+</html>
