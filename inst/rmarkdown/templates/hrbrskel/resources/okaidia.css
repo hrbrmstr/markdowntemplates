@@ -13,6 +13,7 @@ pre[class*="language-"] {
 	background: none;
 	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
 	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 10pt;
 	text-align: left;
 	white-space: pre;
 	word-spacing: normal;
@@ -35,6 +36,7 @@ pre[class*="language-"] {
 div[class*="language-"] > pre[class],
 pre[class*="language-"] {
 	padding: 1em;
+	font-size: 10pt;
 	margin: .5em 0;
 	margin-bottom: 1em;
 	overflow: auto;
@@ -49,6 +51,7 @@ pre[class*="language-"] {
 
 /* Inline code */
 :not(pre) > code[class*="language-"] {
+	font-size: 10pt;
 	padding: .1em;
 	border-radius: .3em;
 	white-space: normal;
