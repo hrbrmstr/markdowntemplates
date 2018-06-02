@@ -27,35 +27,35 @@
 
 @font-face {
   font-family: "fira-sans";
-  src: url("../../hrbrmrkdn/resources/fira-sans/FiraSans-Light.ttf") format("truetype");
+  src: url("fira-sans/FiraSans-Light.ttf") format("truetype");
   font-weight: normal;
   font-style: normal
 }
 
 @font-face {
   font-family: "fira-sans";
-  src: url("../../hrbrmrkdn/resources/fira-sans/FiraSans-LightItalic.ttf") format("truetype");
+  src: url("fira-sans/FiraSans-LightItalic.ttf") format("truetype");
   font-weight: normal;
   font-style: italic
 }
 
 @font-face {
   font-family: "fira-sans";
-  src: url("../../hrbrmrkdn/resources/fira-sans/FiraSans-SemiBold.ttf") format("truetype");
+  src: url("fira-sans/FiraSans-SemiBold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal
 }
 
 @font-face {
   font-family: "fira-mono";
-  src: url("../../hrbrmrkdn/resources/fira-mono/FiraMono-Regular.ttf") format("truetype");
+  src: url("fira-mono/FiraMono-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal
 }
 
 @font-face {
   font-family: "fira-mono";
-  src: url("../../hrbrmrkdn/resources/fira-mono/FiraMono-Bold.ttf") format("truetype");
+  src: url("fira-mono/FiraMono-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal
 }
