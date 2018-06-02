@@ -1,4 +1,4 @@
-#' hrbrmstr Skeleton CSS framework basic template
+#' Prism Skeleton CSS framework basic template
 #'
 #' Template for creating an R markdown document in an alternate Skeleton style
 #' with Fira Sans/Fira Code and dark Prism code blocks.
@@ -23,7 +23,7 @@
 #'   - content: '[link1](http://example.com/) • [link2](http://example.com/)<br/>'
 #'   - content: 'Copyright blah blah'
 #' date: "`r Sys.Date()`"
-#' output: markdowntemplates::hrbrskel
+#' output: markdowntemplates::prismskel
 #' ---}
 #'
 #' @inheritParams rmarkdown::html_document
@@ -33,7 +33,7 @@
 #' rmarkdown::render("source.Rmd", clean=TRUE, quiet=TRUE, output_file="output.html")
 #' }
 #' @export
-hrbrskel <- function(number_sections = FALSE,
+prismskel <- function(number_sections = FALSE,
                      fig_width = 7,
                      fig_height = 5,
                      fig_retina = if (!fig_caption) 2,
@@ -60,8 +60,8 @@ hrbrskel <- function(number_sections = FALSE,
 
   dep <- htmltools::htmlDependency(
     "skeleton", "2.0.4",
-    system.file("rmarkdown", "templates", "hrbrskel", "resources", package = "markdowntemplates"),
-    stylesheet=c("normalize.css", "hrbrskel.css", "CUSTOMIZE_ME.css", "okaidia.css"),
+    system.file("rmarkdown", "templates", "prismskel", "resources", package = "markdowntemplates"),
+    stylesheet=c("normalize.css", "prismskel.css", "CUSTOMIZE_ME.css", "okaidia.css"),
     script = c("../../hrbrmrkdn/resources/prism/prism.js")
   )
 
@@ -74,7 +74,7 @@ hrbrskel <- function(number_sections = FALSE,
   args <- c(
     args, "--template",
     rmarkdown::pandoc_path_arg(
-      system.file("rmarkdown", "templates", "hrbrskel", "base.html", package = "markdowntemplates")
+      system.file("rmarkdown", "templates", "prismskel", "base.html", package = "markdowntemplates")
     )
   )
 

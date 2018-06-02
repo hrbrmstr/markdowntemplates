@@ -17,7 +17,7 @@ These are a set of alternate R markdown templates that do not use Bootstrap and 
 - **minimal** (`output: markdowntemplates::minimal`) uses no CSS framework and only uses the `title` YAML header element.
 - **hugo** (`output: markdowntemplates::hugo`) produces markdown suitable for [Hugo](https://gohugo.io/) websites. It makes a broad assumption that you will save/use the `hugo` document in the `content` directory of your Hugo websites. 
 - **prismpress** (`output: markdowntemplates::prismpress`) produces markdown suitable for use in WordPress with Jetpack (markdown-enabled) and Prism
-- **hrbrskel** (`output: markdowntemplates::hrbrskel`) is a revamp of
+- **prismskel** (`output: markdowntemplates::hrbrskel`) is a revamp of
 the `skeleton` template that has top navbar and footer as optional, uses different
 base colors, is Fira Sans/Fira Code-based and uses Prism for code highlighting
 with a dark theme.
