@@ -3,6 +3,7 @@
 export(bulma)
 export(default)
 export(hrbrmrkdn)
+export(hrbrskel)
 export(hugo)
 export(kickstart)
 export(kube)

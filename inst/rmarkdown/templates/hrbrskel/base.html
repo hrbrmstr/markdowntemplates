@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"$if(lang)$ lang="$lang$" xml:lang="$lang$"$endif$>
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+$if(title)$<meta property="og:title" content="$title$" />$endif$
+$if(og)$
+<meta property="og:type" content="$if(og.type)$$og.type$$else$article$endif$" />
+$if(og.url)$<meta property="og:url" content="$og.url$" />$endif$
+$if(og.image)$<meta property="og:image" content="$og.image$" />$endif$
+$else$
+<meta property="og:type" content="article" />
+$endif$
+
+$for(author-meta)$
+<meta name="author" content="$author-meta$" />
+$endfor$
+
+$if(date-meta)$
+<meta name="date" content="$date-meta$" />
+$endif$
+
+<title>$if(title-prefix)$$title-prefix$ - $endif$$pagetitle$</title>
+
+$for(header-includes)$
+$header-includes$
+$endfor$
+
+$for(css)$
+<link rel="stylesheet" href="$css$" $if(html5)$$else$type="text/css" $endif$/>
+$endfor$
+
+</head>
+
+<body>
+
+$if(navlink)$
+<div class="hdr u-max-full-width">$navlink$</div>
+$endif$
+
+<div class="container" style="margin-top:48pt">
+  <div class="row">
+    <div class="twelve columns">
+
+$for(include-before)$
+$include-before$
+$endfor$
+
+$if(title)$
+<div id="$idprefix$header">
+<h1 class="title">$title$</h1>
+$if(subtitle)$
+<h3 class="subtitle"><em>$subtitle$</em></h3>
+$endif$
+
+<div class="authordate">
+$for(author)$
+$if(author.name)$
+<span class="author"><em>$author.name$</em></span>
+$else$
+<span class="author"><em>$author$</em></span>
+$endif$
+$endfor$
+$if(date)$
+• <span class="date"><em>$date$</em></span>
+$endif$
+</div>
+$endif$
+</div>
+
+$if(toc)$
+<div id="$idprefix$TOC">
+$toc$
+</div>
+$endif$
+
+$body$
+
+$for(include-after)$
+$include-after$
+$endfor$
+
+$if(footer)$
+<div class="ftr">
+$for(footer)$
+$if(footer.content)$
+$footer.content$
+$endif$
+$endfor$
+</div>
+$endif$
+
+</div>
+
+$if(mathjax-url)$
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "$mathjax-url$";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+$endif$
+
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
