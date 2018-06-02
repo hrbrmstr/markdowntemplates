@@ -342,6 +342,9 @@ li {
 
 /* Code
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+code {
+  font-family: fira-mono, monospace;
+}
 /* code {
   font-family: fira-mono, monospace;
   padding: .2rem .5rem;
