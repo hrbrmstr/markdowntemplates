@@ -3,8 +3,6 @@ chunk_hook_html = function(x, options) {
   # cat(x, file="/tmp/a.txt", append=TRUE)
   # cat("\n\n=================\n\n", file="/tmp/a.txt", append=TRUE)
 
-  message("ZOMGOSH IT IS HERE")
-
   if (knitr:::output_asis(x, options)) return(x)
 
   fence_char <- '`'
