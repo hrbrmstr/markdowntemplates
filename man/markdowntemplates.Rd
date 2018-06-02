@@ -38,6 +38,15 @@ for \href{https://gohugo.io/}{Hugo} websites. It makes a broad assumption that y
 will save/use the \code{hugo} document in the \code{content} directory of your Hugo
 websites.
 
+\item \code{hrbrmrkdn} (\code{output: markdowntemplates::hrbrmrkdn}) is a WIP for
+the standard Bootstrap-based RStudio R Markdown template with Prism code
+higlights.
+
+\item \code{hrbrskel} (\code{output: markdowntemplates::hrbrskel}) is a revamp of
+the `skeleton` template that has top navbar and footer as optional, uses different
+base colors, is Fira Sans/Fira Code-based and uses Prism for code highlighting
+with a dark theme.
+
 }
 When you use RStudio to create a new R Markdown document, select "From
 Template" and choose one of these templates.

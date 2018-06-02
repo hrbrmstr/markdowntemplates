@@ -17,6 +17,10 @@ These are a set of alternate R markdown templates that do not use Bootstrap and 
 - **minimal** (`output: markdowntemplates::minimal`) uses no CSS framework and only uses the `title` YAML header element.
 - **hugo** (`output: markdowntemplates::hugo`) produces markdown suitable for [Hugo](https://gohugo.io/) websites. It makes a broad assumption that you will save/use the `hugo` document in the `content` directory of your Hugo websites. 
 - **prismpress** (`output: markdowntemplates::prismpress`) produces markdown suitable for use in WordPress with Jetpack (markdown-enabled) and Prism
+- **hrbrskel** (`output: markdowntemplates::hrbrskel`) is a revamp of
+the `skeleton` template that has top navbar and footer as optional, uses different
+base colors, is Fira Sans/Fira Code-based and uses Prism for code highlighting
+with a dark theme.
 
 When you use RStudio to create a new R Markdown document, select "From Template" and choose one of these templates.
 
@@ -35,18 +39,6 @@ if (!("devtools" %in% installed.packages())){
 
 devtools::install_github("hrbrmstr/markdowntemplates")
 ```
-
-### Releases
-
-- 0.4.0.9999 `to_jupyter()`
-- 0.3.4.9000 TOC basic formattingin Bulma (and re-enabled TOC in general)
-- 0.3.3.9000 Replicate Bulma functionality in Skeleton/default; added supported YAML frontmatter to template functions docs
-- 0.3.2.9000 Basic template tests; `rmarkdown::render` examples added to template functions
-- 0.3.1.9000 Passes CRAN checks
-- 0.3.0.9000 Kube framework contributed by Kieran Healy; preview images in help pages
-- 0.2.1.9000 arbitrary footer content can be specified in the YAML header
-- 0.2.0.9000 `self_contained=FALSE` now copies the custom CSS
-- 0.1.0.9000 Initial release
 
 ### Bulma example
 

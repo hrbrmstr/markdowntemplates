@@ -316,6 +316,7 @@ $(document).ready(function () {
 <li><strong>minimal</strong> (<code>output: markdowntemplates::minimal</code>) uses no CSS framework and only uses the <code>title</code> YAML header element.</li>
 <li><strong>hugo</strong> (<code>output: markdowntemplates::hugo</code>) produces markdown suitable for <a href="https://gohugo.io/">Hugo</a> websites. It makes a broad assumption that you will save/use the <code>hugo</code> document in the <code>content</code> directory of your Hugo websites.</li>
 <li><strong>prismpress</strong> (<code>output: markdowntemplates::prismpress</code>) produces markdown suitable for use in WordPress with Jetpack (markdown-enabled) and Prism</li>
+<li><strong>hrbrskel</strong> (<code>output: markdowntemplates::hrbrskel</code>) is a revamp of the <code>skeleton</code> template that has top navbar and footer as optional, uses different base colors, is Fira Sans/Fira Code-based and uses Prism for code highlighting with a dark theme.</li>
 </ul>
 <p>When you use RStudio to create a new R Markdown document, select “From Template” and choose one of these templates.</p>
 <div id="knit-engine-replacements" class="section level3">
@@ -332,20 +333,6 @@ $(document).ready(function () {
 }
 
 devtools::install_github(&quot;hrbrmstr/markdowntemplates&quot;)</code></pre>
-</div>
-<div id="releases" class="section level3">
-<h3>Releases</h3>
-<ul>
-<li>0.4.0.9999 <code>to_jupyter()</code></li>
-<li>0.3.4.9000 TOC basic formattingin Bulma (and re-enabled TOC in general)</li>
-<li>0.3.3.9000 Replicate Bulma functionality in Skeleton/default; added supported YAML frontmatter to template functions docs</li>
-<li>0.3.2.9000 Basic template tests; <code>rmarkdown::render</code> examples added to template functions</li>
-<li>0.3.1.9000 Passes CRAN checks</li>
-<li>0.3.0.9000 Kube framework contributed by Kieran Healy; preview images in help pages</li>
-<li>0.2.1.9000 arbitrary footer content can be specified in the YAML header</li>
-<li>0.2.0.9000 <code>self_contained=FALSE</code> now copies the custom CSS</li>
-<li>0.1.0.9000 Initial release</li>
-</ul>
 </div>
 <div id="bulma-example" class="section level3">
 <h3>Bulma example</h3>

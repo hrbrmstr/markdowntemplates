@@ -1,16 +1,11 @@
 #' hrbrmstr Skeleton CSS framework basic template
 #'
-#' Template for creating an R markdown document in Skeleton style
+#' Template for creating an R markdown document in an alternate Skeleton style
+#' with Fira Sans/Fira Code and dark Prism code blocks.
 #'
 #' Based on the \href{http://getskeleton.com/}{Skeleton CSS framework}.
 #'
-#' \if{html}{
-#' \figure{skeleton.png}{options: width="100\%" alt="Figure: skeleton example"}
-#' }
-#'
-#' \if{latex}{
-#' \figure{skeleton.pdf}{options: width=10cm}
-#' }
+#' Leave out `navlink` and `footer` to, well, leave out the top nav link bar and footer.
 #'
 #' @encoding UTF-8
 #' @section  YAML Frontmatter:
@@ -28,7 +23,7 @@
 #'   - content: '[link1](http://example.com/) • [link2](http://example.com/)<br/>'
 #'   - content: 'Copyright blah blah'
 #' date: "`r Sys.Date()`"
-#' output: markdowntemplates::skeleton
+#' output: markdowntemplates::hrbrskel
 #' ---}
 #'
 #' @inheritParams rmarkdown::html_document
