@@ -62,7 +62,7 @@ prismskel <- function(number_sections = FALSE,
     "skeleton", "2.0.4",
     system.file("rmarkdown", "templates", "prismskel", "resources", package = "markdowntemplates"),
     stylesheet=c("normalize.css", "prismskel.css", "CUSTOMIZE_ME.css", "okaidia.css"),
-    script = c("../../hrbrmrkdn/resources/prism/prism.js")
+    script = c("prism/prism.js")
   )
 
   extra_dependencies <- append(extra_dependencies, list(dep))
