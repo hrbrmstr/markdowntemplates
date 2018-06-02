@@ -1,18 +1,18 @@
 /* PrismJS 1.14.0
-https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript+c+cpp+python+r+rust&plugins=toolbar+highlight-keywords+copy-to-clipboard */
+https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript+c+bash+cpp+go+json+julia+makefile+markdown+sql+python+r+rust&plugins=highlight-keywords */
 /**
  * prism.js default theme for JavaScript, CSS and HTML
  * Based on dabblet (http://dabblet.com)
  * @author Lea Verou
  */
 
-div[class*="language-"] > pre,
+div[class*="language-"] > pre[class],
 code[class*="language-"],
 pre[class*="language-"] {
 	color: black;
 	background: none;
 	text-shadow: 0 1px white;
-	font-family: 'Fira Mono', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 	text-align: left;
 	white-space: pre;
 	word-spacing: normal;
@@ -30,22 +30,26 @@ pre[class*="language-"] {
 	hyphens: none;
 }
 
-div[class*="language-"] > pre::-moz-selection
-pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
-code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+div[class*="language-"] > pre[class]::-moz-selection,
+pre[class*="language-"]::-moz-selection,
+pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection,
+code[class*="language-"] ::-moz-selection {
 	text-shadow: none;
 	background: #b3d4fc;
 }
 
-div[class*="language-"] > pre::selection,
-pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
-code[class*="language-"]::selection, code[class*="language-"] ::selection {
+div[class*="language-"] > pre[class]::selection,
+pre[class*="language-"]::selection,
+pre[class*="language-"] ::selection,
+code[class*="language-"]::selection,
+code[class*="language-"] ::selection {
 	text-shadow: none;
 	background: #b3d4fc;
 }
 
 @media print {
-	div[class*="language-"] > pre,
+  div[class*="language-"] > pre[class],
 	code[class*="language-"],
 	pre[class*="language-"] {
 		text-shadow: none;
@@ -53,7 +57,7 @@ code[class*="language-"]::selection, code[class*="language-"] ::selection {
 }
 
 /* Code blocks */
-div[class*="language-"] > pre,
+div[class*="language-"] > pre[class],
 pre[class*="language-"] {
 	padding: 1em;
 	margin: .5em 0;
@@ -61,6 +65,7 @@ pre[class*="language-"] {
 }
 
 :not(pre) > code[class*="language-"],
+div[class*="language-"] > pre[class],
 pre[class*="language-"] {
 	background: #f5f2f0;
 }
@@ -142,64 +147,5 @@ pre[class*="language-"] {
 
 .token.entity {
 	cursor: help;
-}
-
-div.code-toolbar {
-	position: relative;
-}
-
-div.code-toolbar > .toolbar {
-	position: absolute;
-	top: .3em;
-	right: .2em;
-	transition: opacity 0.3s ease-in-out;
-	opacity: 0;
-}
-
-div.code-toolbar:hover > .toolbar {
-	opacity: 1;
-}
-
-div.code-toolbar > .toolbar .toolbar-item {
-	display: inline-block;
-}
-
-div.code-toolbar > .toolbar a {
-	cursor: pointer;
-}
-
-div.code-toolbar > .toolbar button {
-	background: none;
-	border: 0;
-	color: inherit;
-	font: inherit;
-	line-height: normal;
-	overflow: visible;
-	padding: 0;
-	-webkit-user-select: none; /* for button */
-	-moz-user-select: none;
-	-ms-user-select: none;
-}
-
-div.code-toolbar > .toolbar a,
-div.code-toolbar > .toolbar button,
-div.code-toolbar > .toolbar span {
-	color: #bbb;
-	font-size: .8em;
-	padding: 0 .5em;
-	background: #f5f2f0;
-	background: rgba(224, 224, 224, 0.2);
-	box-shadow: 0 2px 0 0 rgba(0,0,0,0.2);
-	border-radius: .5em;
-}
-
-div.code-toolbar > .toolbar a:hover,
-div.code-toolbar > .toolbar a:focus,
-div.code-toolbar > .toolbar button:hover,
-div.code-toolbar > .toolbar button:focus,
-div.code-toolbar > .toolbar span:hover,
-div.code-toolbar > .toolbar span:focus {
-	color: inherit;
-	text-decoration: none;
 }
 
