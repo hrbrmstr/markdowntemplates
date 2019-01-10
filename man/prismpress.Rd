@@ -4,9 +4,10 @@
 \alias{prismpress}
 \title{Convert to WordPress+Jetpack+Prism}
 \usage{
-prismpress(toc = FALSE, toc_depth = 3, fig_width = 7, fig_height = 5,
-  dev = "png", df_print = "default", includes = NULL,
-  md_extensions = NULL, hard_line_breaks = TRUE, pandoc_args = NULL)
+prismpress(toc = FALSE, toc_depth = 3, fig_width = 7,
+  fig_height = 5, dev = "png", df_print = "default",
+  includes = NULL, md_extensions = NULL, hard_line_breaks = TRUE,
+  pandoc_args = NULL)
 }
 \arguments{
 \item{toc}{\code{TRUE} to include a table of contents in the output}

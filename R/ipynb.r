@@ -86,7 +86,7 @@ to_jupyter <- function(inputFile, encoding) {
     writeLines(tmp[(yaml_end+1):length(tmp)], tf)
 
     message(" - running notedown...")
-    system2(cmd, args=c(tf, "--rmagic", "--run"), stdout=output_file)
+    system2(cmd, args=c(tf, "--knit", "--rmagic", "--run"), stdout=output_file)
 
     message("Completed conversion.")
     Sys.sleep(0.5)

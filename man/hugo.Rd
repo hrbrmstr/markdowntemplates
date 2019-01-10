@@ -5,8 +5,8 @@
 \title{Convert to markdown for a Hugo blog post}
 \usage{
 hugo(toc = FALSE, toc_depth = 3, fig_width = 7, fig_height = 5,
-  fig_retina = 2, dev = "png", includes = NULL, md_extensions = NULL,
-  pandoc_args = NULL)
+  fig_retina = 2, dev = "png", includes = NULL,
+  md_extensions = NULL, pandoc_args = NULL)
 }
 \arguments{
 \item{toc}{\code{TRUE} to include a table of contents in the output}

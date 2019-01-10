@@ -1,7 +1,7 @@
 Package: markdowntemplates
 Type: Package
 Title: Alternate R Markdown Templates
-Version: 0.4.0
+Version: 0.4.1
 Date: 2018-05-31
 Authors@R: c(
     person("Bob", "Rudis", email = "bob@rud.is", role = c("aut", "cre"), 
@@ -30,4 +30,4 @@ Imports:
     htmltools,
     tools
 Encoding: UTF-8
-RoxygenNote: 6.0.1.9000
+RoxygenNote: 6.1.1
