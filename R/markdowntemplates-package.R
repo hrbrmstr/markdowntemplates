@@ -47,6 +47,6 @@
 #' @name markdowntemplates
 #' @docType package
 #' @author Bob Rudis (bob@rud.is)
-#' @import rmarkdown knitr htmltools
+#' @import rmarkdown knitr htmltools yaml
 #' @importFrom tools file_path_sans_ext
 NULL

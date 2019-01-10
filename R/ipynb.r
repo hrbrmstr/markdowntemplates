@@ -12,7 +12,7 @@
 #' \preformatted{---
 #' title: "ggplot2 example"
 #' knit: markdowntemplates::to_jupyter
-#' output: md_document
+#' run: true
 #' ---
 #'
 #' ## Introduction to ggplot2
@@ -78,20 +78,45 @@ to_jupyter <- function(inputFile, encoding) {
 
     output_file <-  sprintf("%s.%s", tools::file_path_sans_ext(inputFile), "ipynb")
 
-    tf <- tempfile(fileext=".Rmd")
+    tf1 <- tempfile(fileext=".Rmd")
+    on.exit(unlink(tf1), add=TRUE)
 
-    message(" - stripping YAML header")
+    message(" - parsing & stripping YAML header")
+
     tmp <- readLines(inputFile)
-    yaml_end <- which(grepl("^---", tmp))[2]
-    writeLines(tmp[(yaml_end+1):length(tmp)], tf)
+
+    yaml_bits <- which(grepl("^---", tmp))
+
+    # yaml
+    cfg <- read_yaml(text=paste0(tmp[yaml_bits[1]:yaml_bits[2]], collapse="\n"))
+
+    args <- c(tf1, "--knit") # "--rmagic", "--run")
+
+    if ((length(cfg$run) == 0) || (cfg$run == "true")) {
+      message(" - notebook will be executed")
+      args <- c(args, "--run")
+    } else {
+      message(" - notebook will not be executed")
+    }
+
+    rblocks <- grep("^```\\{r", tmp[(yaml_bits[2]+1):length(tmp)], value=TRUE)
+    rblocks <- grep('engine', rblocks, invert = TRUE) # assume engine spec is python
+
+    has_r_blocks <- length(rblocks) > 0
+
+    if (has_r_blocks){
+      message(" - R code blocks detected; notebook will include '%load_ext rpy2.ipython'")
+      args <- c(args, "--rmagic")
+    }
+
+    # Rmd
+    writeLines(tmp[(yaml_bits[2]+1):length(tmp)], tf1)
 
     message(" - running notedown...")
-    system2(cmd, args=c(tf, "--knit", "--rmagic", "--run"), stdout=output_file)
+    system2(cmd, args=args, stdout = output_file, wait = TRUE)
 
     message("Completed conversion.")
     Sys.sleep(0.5)
-
-    unlink(tf)
 
     message(sprintf("\nOutput file is at: [%s]\n", output_file))
 
@@ -101,13 +126,12 @@ to_jupyter <- function(inputFile, encoding) {
     out <- system2(cmd, args=c("nbconvert", "--to html", output_file, "--output", html_file),
                    stdout=TRUE, stderr=TRUE, wait=TRUE)
 
-    message(sprintf("\nHTML preview is at: [%s]\n", html_file))
+    message(sprintf("HTML preview is at: [%s]\n", html_file))
 
     utils::browseURL(html_file)
 
-    output_file
+    invisible(output_file)
 
   }
-
 
 }

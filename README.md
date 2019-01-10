@@ -27,16 +27,28 @@ When you use RStudio to create a new R Markdown document, select "From Template"
 ### knit engine replacements
 
 - `to_jupyter()` : uses `notedown` to make an `ipynb` out of an Rmd
+If you create an R markdown (Rmd) document with the following YAML header:
+
+    ---
+    knit: markdowntemplates::to_jupyter
+    run: false
+    ---
+
+The `to_jupyter()` engine will be used and [`notedown`](https://github.com/aaren/notedown) will be used to convert the notebook to a Jupyter (ipynb) notebook. The `run` parameter is optional. If not present or set to `true` the notebook will be executed as it is converted to a Jupyter notebook. The engine is also now smart enough to detect the absence of pure R code chunks and avoid including of:
+
+    %load_ext rpy2.ipython
+    
+at the top of the notebook.
 
 ### Installation
 
-Since the package is not on CRAN yet, you have to install it from GitHub.
+Since the package is not on CRAN yet, you have to install it devtools-style
 
 ```
-if (!("devtools" %in% installed.packages())){
-  install.packages("devtools")
-}
-
+devtools::install_git("https://sr.ht/~hrbrmstr/markdowntemplates")
+# OR
+devtools::install_git("https://gitlab.com/hrbrmstr/markdowntemplates")
+# OR
 devtools::install_github("hrbrmstr/markdowntemplates")
 ```
 
