@@ -1,0 +1,4 @@
+name: Google Drive Auto-Uploader
+description: >
+  Pre-configured Production Template for Automatic Artifact Uplaods to Google Drive
+create_dir: false
